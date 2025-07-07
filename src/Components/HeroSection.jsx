@@ -18,8 +18,8 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className=" flex justify-center items-center sm:justify-normal  pt-8">
-          <CusButton text="Join Now" />
+        <div className=" flex justify-center items-center sm:justify-normal pt-8">
+          <CusButton text="Join Now" wid='200px' />
         </div>
       </div>
 

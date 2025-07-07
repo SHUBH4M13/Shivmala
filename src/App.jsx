@@ -1,13 +1,16 @@
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
-import HeroSection from "./Components/HeroSection"
+import { BrowserRouter , RouterProvider, createBrowserRouter } from "react-router"
+import Home from "./Pages/Home";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  }
+])
 
 function App() {
   return (
-   <>
-   <Navbar/>
-   <HeroSection/>
-   </>
+     <RouterProvider router={router} />
   )
 }
 
