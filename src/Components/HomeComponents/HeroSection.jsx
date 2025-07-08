@@ -1,6 +1,6 @@
 import React from 'react'
-import CusButton from './CusButton'
-import ConstrcutionVideo from "../assets/ConstrcutionVideo.mp4"
+import CusButton from '../CusButton'
+import ConstrcutionVideo from "../../assets/ConstrcutionVideo.mp4"
 
 export default function HeroSection() {
   return (
