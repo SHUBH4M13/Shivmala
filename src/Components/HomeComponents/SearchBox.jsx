@@ -3,7 +3,7 @@ import { Search } from 'lucide-react'
 
 export default function SearchBox() {
     return (
-        <div className='w-full flex justify-center items-center'>
+        <div className='w-full flex justify-center items-center pt-15 '>
             <div className='flex justify-center items-center  w-[350px] md:w-[500px] bg-gradient-to-r from-blueEnd to-blueStart lg:w-[850px] h-[120px] rounded-xl'>
                 <div className='flex items-center justify-center w-[80%] bg-white h-[50px] rounded-full px-4'>
                     <input

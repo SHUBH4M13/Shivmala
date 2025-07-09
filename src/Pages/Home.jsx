@@ -4,6 +4,7 @@ import Footer from "../Components/Footer"
 import Search from "../Components/HomeComponents/SearchBox"
 import Navbar from "../Components/Navbar"
 import NewNotable from "../Components/HomeComponents/NewNotable"
+import Jumpstart from '../Components/HomeComponents/jumpstart'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <Search />
       <NewNotable/>
+      <Jumpstart/>
       <Footer />
     </div>
   )
