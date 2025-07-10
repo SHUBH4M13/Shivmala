@@ -6,7 +6,7 @@ import jumpstartp2 from "../../assets/jumpstartp2.jpg"
 
 export default function Jumpstart() {
     return (
-        <div className='w-full flex justify-center items-center p-10  '>
+        <div className='w-full flex justify-center items-center p-10  gap-10  '>
 
             <div className=' flex '>
                 <ZoomPhotoText

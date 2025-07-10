@@ -5,6 +5,7 @@ import Search from "../Components/HomeComponents/SearchBox"
 import Navbar from "../Components/Navbar"
 import NewNotable from "../Components/HomeComponents/NewNotable"
 import Jumpstart from '../Components/HomeComponents/jumpstart'
+import TechnicalConnect from "../Components/HomeComponents/TechnicalConnect"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Search />
       <NewNotable/>
       <Jumpstart/>
+      <TechnicalConnect/>
       <Footer />
     </div>
   )
