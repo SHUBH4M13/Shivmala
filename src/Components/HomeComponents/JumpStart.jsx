@@ -2,11 +2,18 @@ import React from 'react'
 import ZoomPhotoText from '../ZoomPhotoText'
 import jumpstartp1 from "../../assets/jumpstartp1.jpg"
 import jumpstartp2 from "../../assets/jumpstartp2.jpg"
-
+import {motion} from "motion/react"
 
 export default function Jumpstart() {
     return (
-        <div className='w-full flex justify-center items-center p-10  gap-10  '>
+        <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        >
+        <div className='w-full flex flex-col sm:flex-row  justify-center items-center p-10  gap-10  '>
+        
 
             <div className=' flex '>
                 <ZoomPhotoText
@@ -33,7 +40,7 @@ export default function Jumpstart() {
                     ButtonText={"Learn more"}
                 />
             </div>
-
         </div>
+        </motion.div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import SmallHoverBox from '../SmallHoverBox'
 import BigHoverBox from '../BigHoverBox'
-
+import {motion} from "framer-motion"
 import Photo1 from "../../assets/Photo1.jpg"
 import Photo2 from "../../assets/Photo2.jpg"
 import Photo3 from "../../assets/Photo3.jpg"
@@ -13,7 +13,12 @@ export default function NewNotable() {
 
       <p className=' font-bold text-4xl  text-HoverBlue'>New & Notable</p>
 
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'>
+      <motion.div 
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'>
         <BigHoverBox
           photo={Photo1}
           heading1="shivmala ELECTION"
@@ -25,9 +30,14 @@ export default function NewNotable() {
           heading2="Help victims of recent tragedies"
           heading3="Support those affected by recent earthquakes, fires, hurricanes, floods, and other catastrophes."
         />
-      </div>
+      </motion.div>
 
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'>
+      <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'>
         <SmallHoverBox
           heading1={"shivmala Foundation"}
           heading2="Inspire a kid to be an engineer"
@@ -39,9 +49,14 @@ export default function NewNotable() {
           heading2="SHIVMALA’s infrastructure grade improves to a ‘C’"
           heading3="The 2025 Report Card for America’s Infrastructure is here. See why the grade went up and learn about solutions to keep improving America’s infrastructure."
         />
-      </div>
+      </motion.div>
 
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'>
+      <motion.div 
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'>
         <BigHoverBox
           photo={Photo3}
           heading1="shivmala 2025 Convention"
@@ -53,7 +68,7 @@ export default function NewNotable() {
           heading2="Meet the New Faces of Civil Engineering–College"
           heading3="These talented students will be designing infrastructure for 2050 – SHIVMALA’s New Faces of Civil Engineering–College for 2025."
         />
-      </div>
+      </motion.div>
     </div>
   )
 }
