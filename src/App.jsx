@@ -2,8 +2,10 @@ import { RouterProvider, createBrowserRouter } from "react-router"
 import Home from "./Pages/Home";
 
 import Legal from "./Pages/Legal";
-import CodeofConduct from "./Components/LegalComponents/CodeofConduct";
-import Privacy from "./Components/LegalComponents/Privacy";
+import CodeofConduct from "./LegalComponents/CodeofConduct";
+import Privacy from "./LegalComponents/Privacy";
+import TermsConditions from "./LegalComponents/TermsConditions";
+
 
 
 const router = createBrowserRouter([
@@ -24,8 +26,8 @@ const router = createBrowserRouter([
         element: <Privacy/>,
       },
       {
-      path: "CodeofConduct",
-      element: <CodeofConduct/>,
+      path: "TermsConditions",
+      element: <TermsConditions/>,
       }
     ]
   }

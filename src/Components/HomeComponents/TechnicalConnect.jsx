@@ -4,7 +4,7 @@ import TechnicalResource from "../../assets/TechnicalResource.jpg"
 import Laptop from "../../assets/Laptop.jpg"
 import ConstructionWorker from "../../assets/ConstructionWorker.jpg"
 import Laptopguy from "../../assets/Laptopguy.jpg"
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 
 export default function TechnicalConnect() {

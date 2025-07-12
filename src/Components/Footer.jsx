@@ -1,7 +1,9 @@
 import React from 'react'
 import { Twitter, Linkedin, Youtube, Instagram, Facebook } from "lucide-react"
+import { useNavigate } from 'react-router'
 
 export default function Footer() {
+    const navigate = useNavigate();
     return (
         <div className='w-full bg-plainGrey px-10 py-12'>
             <div className='flex flex-col md:flex-row justify-between w-full gap-10'>
@@ -55,11 +57,17 @@ export default function Footer() {
                         <p className='text-sm'>© 2025 Shivmala</p>
 
                         <div className='flex flex-wrap items-center gap-4 text-sm'>
-                            <p className='hover:text-primaryblue cursor-pointer'>Code of Conduct</p>
+                            <p 
+                            onClick={ () => { navigate("/legal/CodeofConduct")}}
+                            className='hover:text-primaryblue cursor-pointer'>Code of Conduct</p>
                             <div className='w-[1.5px] h-[20px] bg-gray-300' />
-                            <p className='hover:text-primaryblue cursor-pointer'>Privacy</p>
+                            <p 
+                            onClick={ () => { navigate("/legal/privacy")}}
+                            className='hover:text-primaryblue cursor-pointer'>Privacy</p>
                             <div className='w-[1.5px] h-[20px] bg-gray-300' />
-                            <p className='hover:text-primaryblue cursor-pointer'>Terms & Conditions</p>
+                            <p 
+                             onClick={ () => { navigate("/legal/TermsConditions")}}
+                            className='hover:text-primaryblue cursor-pointer'>Terms & Conditions</p>
                         </div>
                     </div>
                 </div>
