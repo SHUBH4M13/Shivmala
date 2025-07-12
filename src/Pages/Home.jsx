@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar"
 import NewNotable from "../Components/HomeComponents/NewNotable"
 import Jumpstart from '../Components/HomeComponents/JumpStart'
 import TechnicalConnect from "../Components/HomeComponents/TechnicalConnect"
+import PassionForward from "../Components/HomeComponents/PassionForward"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <NewNotable/>
       <Jumpstart/>
       <TechnicalConnect/>
+      <PassionForward/>
       <Footer />
     </div>
   )
