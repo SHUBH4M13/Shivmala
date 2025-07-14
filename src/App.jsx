@@ -9,6 +9,8 @@ import TermsConditions from "./LegalComponents/TermsConditions";
 
 import ServiceLayout from "./Components/Services/ServiceLayout"
 
+import Career from "./Pages/Career";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,8 +39,12 @@ const router = createBrowserRouter([
     element: <Aboutus/>
   },
   {
-    path: "/Service",
+    path: "/service",
     element: <ServiceLayout/>
+  },
+  {
+    path: "/career",
+    element: <Career/>
   }
 ])
 
