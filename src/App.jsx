@@ -7,7 +7,7 @@ import CodeofConduct from "./LegalComponents/CodeofConduct";
 import Privacy from "./LegalComponents/Privacy";
 import TermsConditions from "./LegalComponents/TermsConditions";
 
-import ServiceLayout from "./Components/Services/ServiceLayout"
+import Services from "./Pages/Services"
 
 import Career from "./Pages/Career";
 
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
     element: <Aboutus/>
   },
   {
-    path: "/service",
-    element: <ServiceLayout/>
+    path: "/services",
+    element: <Services/>
   },
   {
     path: "/career",
