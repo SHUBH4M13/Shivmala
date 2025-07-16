@@ -1,66 +1,80 @@
-import { useState } from 'react'
-import { Menu } from "lucide-react"
-import ShivmalaLogo from "../assets/ShivmalaLogo.png"
+import { useState } from 'react';
+import { Menu, MoveLeft } from "lucide-react";
+import ShivmalaLogo from "../assets/ShivmalaLogo.png";
 import { useNavigate } from 'react-router';
 
 export default function Navbar() {
+  const [ToggleMenu, SetToggleMenu] = useState(false);
+  const navigate = useNavigate();
 
-    const [ToggleMenu,SetToggleMenu] = useState(false);
+  const routes = [
+    { option: "Home", path: "/" },
+    { option: "About us", path: "/aboutus" },
+    { option: "Contact us", path: "/contactus" },
+    { option: "Projects", path: "/projects" },
+    { option: "Career", path: "/career" },
+    { option: "News & Media", path: "/news" },
+    { option: "Investors", path: "/investors" },
+    { option: "Services", path: "/services" }
+  ];
 
-    function HandleToggleMenu(){
-        SetToggleMenu( (prev) => !prev)
-    }
+  const handleToggleMenu = () => SetToggleMenu(prev => !prev);
 
-    const navigate = useNavigate();
+  const navItemClasses = "text-lg cursor-pointer hover:text-primaryblue duration-200";
 
-    return (
-        <div className='w-full h-[90px] flex justify-between items-center px-6'>
+  return (
+    <div className={`w-full ${ToggleMenu ? 'h-full' : 'h-[90px]'} flex justify-between items-center px-6 relative`}>
+      {/* Logo */}
+      <div className='h-full w-1/3 flex items-center'>
+        <img
+          onClick={() => navigate("/")}
+          className='h-[176px] cursor-pointer'
+          src={ShivmalaLogo}
+          alt="Company Logo"
+        />
+      </div>
 
-            <div className='h-full w-1/3 flex items-center'>
-                <img 
-                onClick={ () => { navigate("/") }}
-                className='h-[200px] '
-                src={ShivmalaLogo} alt="CompanyLogo" />
-            </div>
+      {/* Desktop Nav */}
+      <div className='hidden lg:flex w-2/3 items-center justify-end'>
+        <ul className='flex gap-8 font-semibold'>
+          {routes.map(({ option, path }) => (
+            <li
+              key={path}
+              onClick={() => navigate(path)}
+              className={navItemClasses}
+            >
+              {option}
+            </li>
+          ))}
+        </ul>
+      </div>
 
-            <div className='h-full w-2/3 flex items-center justify-end'>
-                <nav className='hidden lg:flex gap-8 font-semibold'>
-                    <ul className=' hidden ml-5 font-semibold md:flex gap-8 cursor-pointer'>
-                        <li 
-                        onClick={ () => { navigate("/") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 '>Home</li>
-                        <li 
-                        onClick={ () => { navigate("/aboutus") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 ' >About us</li>
-                        <li 
-                        onClick={ () => { navigate("/contactus") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 ' >Contact us</li>
-                        <li 
-                        onClick={ () => { navigate("/projects") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 ' >Projects</li>
-                        <li 
-                        onClick={ () => { navigate("/career") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 ' >Career</li>
-                        <li 
-                        onClick={ () => { navigate("/news") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 ' >News & Media</li>
-                        <li 
-                        onClick={ () => { navigate("/investors") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 '>Investors</li>
-                        <li
-                        onClick={ () => { navigate("/services") }}
-                        className=' text-lg cursor-pointer hover:text-primaryblue duration-200 '>Services</li>
-                    </ul>
-                </nav>
+      <div className='lg:hidden cursor-pointer text-black'>
+        <Menu onClick={handleToggleMenu} size={28} />
+      </div>
 
-                <div className=' md:hidden cursor-pointer ml-4 text-black'>
-                    <Menu size={28} />
-                </div>
+      {ToggleMenu && (
+        <div className='fixed inset-0 bg-white z-50 flex flex-col items-center justify-center'>
+          <button className='absolute top-4 left-4' onClick={handleToggleMenu}>
+            <MoveLeft size={28} />
+          </button>
 
-                {}
-
-
-            </div>
+          <ul className='flex flex-col gap-6 text-center font-semibold'>
+            {routes.map(({ option, path }) => (
+              <li
+                key={path}
+                onClick={() => {
+                  navigate(path);
+                  handleToggleMenu();
+                }}
+                className={navItemClasses}
+              >
+                {option}
+              </li>
+            ))}
+          </ul>
         </div>
-    )
+      )}
+    </div>
+  );
 }
