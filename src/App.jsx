@@ -10,6 +10,7 @@ import TermsConditions from "./LegalComponents/TermsConditions";
 import Services from "./Pages/Services"
 
 import Career from "./Pages/Career";
+import Projects from "./Pages/Projects";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/career",
     element: <Career/>
+  },
+  {
+    path: "/projects",
+    element: <Projects/>
   }
 ])
 
