@@ -2,7 +2,7 @@ import React from 'react'
 import CaratText from "./CaratText"
 import CusButton from './CusButton'
 
-export default function ZoomPhotoText({ photo, heading1, heading2, text1, ButtonText, onClick, textalign }) {
+export default function ZoomPhotoText({ photo, heading1, heading2, text1, ButtonText, onClick, textalign, h2Size }) {
   return (
     <div className='flex flex-col w-full max-w-[95%] md:max-w-[700px] mx-auto px-4'>
 
@@ -16,16 +16,21 @@ export default function ZoomPhotoText({ photo, heading1, heading2, text1, Button
         <CaratText
           heading1={heading1}
           heading2={heading2}
+          h2Size={h2Size}
         />
       </div>
 
       {text1 && (
         <div className="pt-3 sm:pt-4">
-          <p className={`leading-relaxed whitespace-pre-line text-[16px] sm:text-[17px] md:text-[18px] font-normal text-gray-800 ${textalign || 'text-left'}`}>
+          <p
+            className={`leading-relaxed whitespace-pre-line text-[16px] sm:text-[17px] md:text-[18px] font-normal text-gray-800 ${textalign ? textalign : 'text-left'
+              }`}
+          >
             {text1}
           </p>
         </div>
       )}
+
 
       {ButtonText && (
         <div className='pt-6 flex justify-center sm:justify-start sm:pt-8 md:pt-10'>
