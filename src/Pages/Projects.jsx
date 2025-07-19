@@ -4,7 +4,7 @@ import Footer from '../Components/Footer';
 import ProjectsHero from '../Components/Projects/ProjectsHero';
 import ProjectCard from '../Components/Projects/ProjectCard';
 import { motion } from 'motion/react';
-import Photo7 from "../assets/ProjectAssets/photo7.jpg"
+import Photo7 from "../assets/ProjectAssets/Photo7.jpg"
 import projectData from '../Components/Projects/ProjectData';
 
 export default function Projects() {
