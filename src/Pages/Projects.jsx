@@ -1,19 +1,19 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+
 import ProjectsHero from '../Components/Projects/ProjectsHero';
 import ProjectCard from '../Components/Projects/ProjectCard';
 import { motion } from 'motion/react';
 import Photo7 from "../assets/ProjectAssets/Photo7.jpg"
 import projectData from '../Components/Projects/ProjectData';
+import { useNavigate } from 'react-router';
 
 export default function Projects() {
+  const navigate = useNavigate();
   return (
-    <div>
-      <Navbar />
+    <div>      
       <ProjectsHero />
 
-      <>
+      <> {/* lisitng the projects done*/}
         {projectData.map((project, index) => (
           <motion.div
             key={index}
@@ -24,7 +24,9 @@ export default function Projects() {
             }}
             viewport={{ once: true }}
           >
-            <ProjectCard {...project} />
+            <ProjectCard {...project}
+            onClick={() => navigate(project.onClickRoute || '/projects')}
+            />
           </motion.div>
         ))}
       </>
@@ -47,9 +49,6 @@ export default function Projects() {
           </p>
         </div>
       </motion.div>
-
-
-      <Footer />
     </div>
   );
 }

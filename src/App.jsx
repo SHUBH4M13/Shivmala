@@ -11,6 +11,17 @@ import Services from "./Pages/Services"
 
 import Career from "./Pages/Career";
 import Projects from "./Pages/Projects";
+import ProjectLayout from "./Pages/ProjectLayout";
+
+import Manrekha_Residency from "./Components/ProjectsSlides/Manrekha_Residency"
+import DrainageLineSarsa from "./Components/ProjectsSlides/DrainageLineSarsa"
+import PoojaHandiBagInterior from "./Components/ProjectsSlides/PoojaHandiBagInterior"
+import HousingProjectsPage from "./Components/ProjectsSlides/HousingProjectsPage"
+import HotelRestaurantPage from "./Components/ProjectsSlides/HotelRestaurantPage"
+import RoadConstructionPage from "./Components/ProjectsSlides/RoadConstructionPage"
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -49,7 +60,37 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects",
-    element: <Projects/>
+    element: <ProjectLayout/>,
+    children: [
+      {
+        path: "",
+        element: <Projects/>,
+      },
+      {
+        path: "Housing",
+        element: <Manrekha_Residency/>,
+      },
+      {
+        path: "DrainageLine",
+        element: <DrainageLineSarsa/>,
+      },
+      {
+        path: "interior",
+        element: <PoojaHandiBagInterior/>,
+      },
+      {
+        path: "Housing",
+        element: <HousingProjectsPage/>,
+      },
+      {
+        path: "Restaurant_Hotel",
+        element: <HotelRestaurantPage/>,
+      },
+      {
+        path: "roads",
+        element: <RoadConstructionPage/>,
+      },
+    ]
   }
 ])
 

@@ -3,10 +3,7 @@ import Photo2 from "../../assets/ProjectAssets/Photo2.png"
 import Photo3 from "../../assets/ProjectAssets/Photo3.png"
 import Photo4 from "../../assets/ProjectAssets/Photo4.png"
 import Photo5 from "../../assets/ProjectAssets/Photo5.png"
-import Photo6 from "../../assets/ProjectAssets/Photo6.png"
-
-
-
+import Photo8 from "../../assets/ProjectAssets/Photo8.png"
 
 const projectData = [
     {
@@ -18,16 +15,18 @@ const projectData = [
       Photo: Photo1,
       PhotoLoc: "MANREKHA RESIDENCY, LATUR",
       PhotoDuration: "Duration: Jan 2023 – Sep 2023",
+      onClickRoute:"/projects/Housing"
     },
     {
       heading2: "Construction",
       text1:
         "We provide reliable drainage line installation and repair to ensure smooth water flow and prevent blockages. Our work supports strong foundations and long-term structural safety.",
       ButtonText: "Learn more",
-      Photo: Photo2,
+      Photo: Photo8,
       PhotoLoc: "DRAINAGE LINE – SARSA",
       PhotoDuration: "Jan 2023 – Feb 2023",
       direction: "reverse",
+      onClickRoute:"/projects/DrainageLine"
     },
     {
       heading2: "Interior Designing",
@@ -37,6 +36,7 @@ const projectData = [
       Photo: Photo3,
       PhotoLoc: "POOJA HANDIBAG HOUSE — INTERIOR",
       PhotoDuration: "Duration: Feb 2023 – May 2023",
+      onClickRoute:"/projects/interior"
     },
     {
       heading2: "Dream Home Construction",
@@ -46,6 +46,7 @@ const projectData = [
       Photo: Photo4,
       PhotoLoc: "PATEL PROJECT PUNE",
       direction: "reverse",
+      onClickRoute:"/projects/Housing"
     },
     {
       heading2: "Hotel & Restaurant",
@@ -54,16 +55,18 @@ const projectData = [
       ButtonText: "Read the report",
       Photo: Photo5,
       PhotoLoc: "Hotel & Restaurant",
+      onClickRoute:"/projects/Restaurant_Hotel",
     },
     {
       heading2: "Road Construction",
       text1:
         "We build strong, durable cement roads using quality engineering and expert techniques. Our focus is on long-lasting performance, smooth finishes, and timely project delivery.",
       ButtonText: "Learn more",
-      Photo: Photo6,
+      Photo: Photo2,
       PhotoLoc: "CONCRETE ROAD – SARSA",
       PhotoDuration: "Duration: Feb 2023 – Mar 2023",
       direction: "reverse",
+      onClickRoute:"/projects/roads"
     },
   ];
 

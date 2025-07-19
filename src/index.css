@@ -1,10 +1,14 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-@theme{
- --color-blueStart: #253A6E;
- --color-blueEnd: #059BD6;
- --color-plainGrey: #edeff1;
- --color-primaryblue: #0273ba;
- --color-textblue: #0086D2;
- --color-HoverBlue: #253A6E;
+@import "tailwindcss";
+@theme {
+  --color-blueStart: #253A6E;
+  --color-blueEnd: #059BD6;
+  --color-plainGrey: #edeff1;
+  --color-primaryblue: #0273ba;
+  --color-textblue: #0086D2;
+  --color-HoverBlue: #253A6E;
+
+  --font-sans: "Mulish", sans-serif;
+  --font-heading: "Geist", sans-serif;
 }
