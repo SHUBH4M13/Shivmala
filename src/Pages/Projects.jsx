@@ -4,7 +4,7 @@ import Footer from '../Components/Footer';
 import ProjectsHero from '../Components/Projects/ProjectsHero';
 import ProjectCard from '../Components/Projects/ProjectCard';
 import { motion } from 'motion/react';
-import photo7 from "../assets/ProjectAssets/photo7.jpg"
+import Photo7 from "../assets/ProjectAssets/photo7.jpg"
 import projectData from '../Components/Projects/ProjectData';
 
 export default function Projects() {
@@ -38,7 +38,7 @@ export default function Projects() {
       viewport={{ once: true }}
       className="flex flex-col lg:flex-row justify-evenly items-center gap-10 mb-16 px-4">
         <div className="w-full max-w-[400px]">
-          <img src={photo7} alt="Building Tomorrow" className="w-full h-auto object-contain" />
+          <img src={Photo7} alt="Building Tomorrow" className="w-full h-auto object-contain" />
         </div>
         <div className="w-full max-w-[450px] text-center lg:text-left">
           <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl">Building Tomorrow</h2>
