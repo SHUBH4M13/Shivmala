@@ -1,11 +1,10 @@
 import React from 'react'
-import investorsp1 from "../../assets/investorsp1.jpg"
-
+import Investorsp1 from "../../assets/Investorsp1.jpg"
 export default function Investorshero() {
     return (
         <div className="relative w-full h-[581px] overflow-hidden">
             <img
-                src={investorsp1}
+                src={Investorsp1}
                 alt="Investor"
                 className="w-full h-full object-cover z-0"
             />
