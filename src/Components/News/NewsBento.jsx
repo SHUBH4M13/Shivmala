@@ -1,7 +1,7 @@
 import React from 'react'
 import NewsComponent from './NewsComponent'
 
-export default function NewsBento() {
+export default function NewsBento({TopStories}) {
     return (
         <div className=' w-full  '>
             <div>

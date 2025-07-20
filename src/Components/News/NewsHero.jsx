@@ -2,7 +2,7 @@ import React from 'react';
 import Building from '../../assets/Building.jpg';
 import NewsText from '../News/NewsText';
 
-export default function NewsHero() {
+export default function NewsHero({HeroData}) {
   return (
     <div className=" bg-[#F1F1F1] px-6 sm:px-10 lg:px-20 py-10 flex flex-col gap-6 text-black">
       

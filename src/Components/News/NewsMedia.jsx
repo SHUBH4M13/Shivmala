@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NewsMedia() {
+export default function NewsMedia({MediaData}) {
     return (
         <div className='px-6 sm:px-10 lg:px-20 py-10 flex flex-col'>
 

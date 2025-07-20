@@ -21,9 +21,7 @@ import HotelRestaurantPage from "./Components/ProjectsSlides/HotelRestaurantPage
 import RoadConstructionPage from "./Components/ProjectsSlides/RoadConstructionPage"
 import Contactus from "./Pages/Contactus";
 import News from "./Pages/News";
-
-
-
+import Investors from "./Pages/Investors"
 
 const router = createBrowserRouter([
   {
@@ -101,6 +99,10 @@ const router = createBrowserRouter([
   {
     path:"/news",
     element: <News/>
+  },
+  {
+    path:"/investors",
+    element: <Investors/>
   },
 ])
 
