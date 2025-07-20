@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useEffect } from 'react';
 import ProjectsHero from '../Components/Projects/ProjectsHero';
 import ProjectCard from '../Components/Projects/ProjectCard';
 import { motion } from 'motion/react';
@@ -8,7 +8,10 @@ import projectData from '../Components/Projects/ProjectData';
 import { useNavigate } from 'react-router';
 
 export default function Projects() {
+
   const navigate = useNavigate();
+
+
   return (
     <div>      
       <ProjectsHero />

@@ -19,6 +19,8 @@ import PoojaHandiBagInterior from "./Components/ProjectsSlides/PoojaHandiBagInte
 import HousingProjectsPage from "./Components/ProjectsSlides/HousingProjectsPage"
 import HotelRestaurantPage from "./Components/ProjectsSlides/HotelRestaurantPage"
 import RoadConstructionPage from "./Components/ProjectsSlides/RoadConstructionPage"
+import Contactus from "./Pages/Contactus";
+import News from "./Pages/News";
 
 
 
@@ -91,7 +93,15 @@ const router = createBrowserRouter([
         element: <RoadConstructionPage/>,
       },
     ]
-  }
+  },
+  {
+    path:"/contactus",
+    element: <Contactus/>
+  },
+  {
+    path:"/news",
+    element: <News/>
+  },
 ])
 
 function App() {
