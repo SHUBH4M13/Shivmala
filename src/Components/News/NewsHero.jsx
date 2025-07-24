@@ -1,8 +1,16 @@
 import React from 'react';
-import Building from '../../assets/Building.jpg';
 import NewsText from '../News/NewsText';
 
 export default function NewsHero({HeroData}) {
+
+  if (!HeroData || HeroData.length === 0 || !HeroData[0]?.title) {
+    return (
+      <div className="px-6 sm:px-10 lg:px-20 py-10 text-black">
+        <p className="text-xl">Loading News...</p>
+      </div>
+    );
+  }
+
   return (
     <div className=" bg-[#F1F1F1] px-6 sm:px-10 lg:px-20 py-10 flex flex-col gap-6 text-black">
       
@@ -19,19 +27,20 @@ export default function NewsHero({HeroData}) {
         <div className="relative w-full max-w-[500px] h-[280px] overflow-hidden group">
           <img
             className="w-full h-full object-cover"
-            src={Building}
+            src={HeroData[0].image_url}
             alt="Building"
           />
-          <div className="absolute bottom-0 left-0 w-full h-full border-l-8 border-b-8 border-yellow-400 opacity-0 group-hover:opacity-100 pointer-events-none" />
+          <div 
+          className="absolute bottom-0 left-0 w-full h-full border-l-8 border-b-8 border-yellow-400 opacity-0 group-hover:opacity-100 pointer-events-none" />
         </div>
 
         {/* News Text */}
         <div className="w-full max-w-[500px] px-2 sm:px-0">
           <NewsText
             titleSize='text-5xl'
-            category="Company news"
-            title="SHIVMALA’s impact on infrastructure in 2025"
-            date="30 April 2025"
+            category={HeroData[0].category}
+            title={HeroData[0].title}
+            date={HeroData[0].pubDate}
           />
         </div>
       </div>

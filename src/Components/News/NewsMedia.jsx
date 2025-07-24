@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NewsMedia({MediaData}) {
+export default function NewsMedia({ MediaData }) {
     return (
         <div className='px-6 sm:px-10 lg:px-20 py-10 flex flex-col'>
 
@@ -8,15 +8,22 @@ export default function NewsMedia({MediaData}) {
                 In the Media
             </span>
 
-            <Headline
-            title={"hello this is testing "}
-            />
+            <div className='flex flex-col gap-5'>
+                {MediaData.map((news, idx) => (
+                    <Headline
+                        key={idx} 
+                        title={news.title}
+                        date={news.pubDate}
+                    />
+                ))}
+            </div>
+
         </div>
     )
 }
 
 
-function Headline({title , date}) {
+function Headline({ title, date }) {
     return (
         <div>
             <span className={`font-semibold hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug text-lg`}>
@@ -24,7 +31,7 @@ function Headline({title , date}) {
             </span>
 
             {/* Date Info */}
-            <div className="text-sm sm:text-[15px] flex gap-2 text-gray-600 flex-wrap">
+            <div className="text-sm sm:text-[15px] flex gap-5 text-gray-600 flex-wrap">
                 <span>News Release</span>
                 <span>|</span>
                 <span>{date}</span>
