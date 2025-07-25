@@ -6,7 +6,7 @@ export default function Footer() {
     const navigate = useNavigate();
 
     return (
-        <div className="w-full bg-plainGrey px-6 sm:px-10 py-12">
+        <footer className="w-full bg-plainGrey px-6 sm:px-10 py-12">
             <div className="flex flex-col md:flex-row justify-between w-full gap-12">
 
                 {/* Navigation Lists */}
@@ -69,6 +69,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }

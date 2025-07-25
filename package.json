@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.10.0",
+    "lighthouse": "^12.8.0",
     "lucide-react": "^0.525.0",
     "motion": "^12.23.3",
     "newsapi": "^2.4.1",
