@@ -6,16 +6,22 @@ import SmallHoverBox from '../SmallHoverBox'
 import windmill from "../../assets/windmill.jpg"
 import GroupPpl from "../../assets/GroupPpl.jpg"
 import Building from "../../assets/Building.jpg"
+import { useMediaQuery } from 'react-responsive'
 
 
 export default function PassionForward() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  const initialMinusX = isMobile ? 0 : -200;
+  const initialX = isMobile ? 0 : 200;
+  const initialY = isMobile ? 0 : 200;
   return (
     <div className='w-full h-fit flex flex-col gap-10 items-center px-4 sm:px-10 py-10 sm:py-20'>
 
       <p className=' font-bold text-4xl  text-HoverBlue'>Moving the profession forward</p>
 
       <motion.div 
-      initial={{ opacity: 0, x: 200 }}
+      initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
@@ -39,7 +45,7 @@ export default function PassionForward() {
       </motion.div>
 
       <motion.div
-      initial={{ opacity: 0, x: -200 }}
+      initial={{ opacity: 0, x: initialMinusX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
@@ -60,7 +66,7 @@ export default function PassionForward() {
       </motion.div>
 
       <motion.div 
-      initial={{ opacity: 0, x: 200 }}
+      initial={{ opacity: 0, x: initialX}}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}

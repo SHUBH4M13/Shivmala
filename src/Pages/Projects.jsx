@@ -6,9 +6,14 @@ import { motion } from 'motion/react';
 import Photo7 from "../assets/ProjectAssets/Photo7.jpg"
 import projectData from '../Components/Projects/ProjectData';
 import { useNavigate } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Projects() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
+  const initialMinusX = isMobile ? 0 : -200;
+  const initialX = isMobile ? 0 : 200;
+  const initialY = isMobile ? 0 : 200;
   const navigate = useNavigate();
 
 
@@ -20,7 +25,7 @@ export default function Projects() {
         {projectData.map((project, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: index % 2 === 0 ? 200 : -200 }}
+            initial={{ opacity: 0, x: index % 2 === 0 ? initialX : initialMinusX }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               duration: 0.8,

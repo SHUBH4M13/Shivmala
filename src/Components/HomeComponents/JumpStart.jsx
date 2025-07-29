@@ -3,11 +3,17 @@ import ZoomPhotoText from '../ZoomPhotoText'
 import jumpstartp1 from "../../assets/jumpstartp1.jpg"
 import jumpstartp2 from "../../assets/jumpstartp2.jpg"
 import {motion} from "motion/react"
+import { useMediaQuery } from 'react-responsive'
 
 export default function Jumpstart() {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+
+    const initialX = isMobile ? 0 : -200;
+    const initialY = isMobile ? 0 : 200;
+
     return (
         <motion.div
-        initial={{ opacity: 0, y: 200 }}
+        initial={{ opacity: 0, y: initialY }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}

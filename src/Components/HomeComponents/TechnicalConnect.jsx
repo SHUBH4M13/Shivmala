@@ -5,14 +5,20 @@ import Laptop from "../../assets/Laptop.jpg"
 import ConstructionWorker from "../../assets/ConstructionWorker.jpg"
 import Laptopguy from "../../assets/Laptopguy.jpg"
 import { motion } from "motion/react";
+import { useMediaQuery } from 'react-responsive'
 
 
 export default function TechnicalConnect() {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+
+    const initialMinusX = isMobile ? 0 : -200;
+    const initialX = isMobile ? 0 : 200;
+    const initialY = isMobile ? 0 : 200;
     return (
 
         <motion.div 
         className=' flex flex-col justify-center items-center gap-10'
-        initial={{ opacity: 0, y: 200 }}
+        initial={{ opacity: 0, y: initialY }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
@@ -55,7 +61,7 @@ programs.
             <p className='pr-10 pl-10 text-2xl  sm:text-4xl font-bold text-HoverBlue'>New Ways to Connect</p>
 
             <motion.div 
-            initial={{ opacity: 0, y: 200 }}
+            initial={{ opacity: 0, y: initialY }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}

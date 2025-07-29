@@ -2,16 +2,20 @@ import React from 'react'
 import CusButton from '../CusButton'
 import ConstrcutionVideo from "../../assets/ConstrcutionVideo.mp4"
 import { motion } from "motion/react"
+import { useMediaQuery } from "react-responsive";
 
 export default function HeroSection() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  const initialX = isMobile ? 0 : -200;
   return (
     <div className="flex flex-col-reverse md:flex-row items-center w-full">
 
       <div className="w-full  md:w-1/2 p-6 md:p-20">
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: initialX }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
           <div className="flex flex-col">
