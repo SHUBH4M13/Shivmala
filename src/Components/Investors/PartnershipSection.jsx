@@ -17,7 +17,7 @@ export default function PartnershipSection() {
                     <div>
                         <h3 className="text-2xl sm:text-3xl font-bold">TEEGAAT</h3>
                         <p className="text-gray-700 mt-3 text-[15px] sm:text-base leading-relaxed">
-                            Shivmala is committed to shaping the future of infrastructure by delivering sustainable, high-impact solutions that drive progress across urban and rural landscapes. With a strong foundation in engineering excellence, our partnerships focus on scalable growth, smart technologies, and lasting social value. We collaborate with global and regional stakeholders to transform infrastructure challenges into opportunities, empowering communities and enabling economic development at scale.
+                            Shivmala Infrastructure is shaping India’s future with forward-thinking construction solutions that uplift both urban and rural environments. Our strategic alliances with public and private entities help overcome infrastructure challenges through innovation, quality, and smart engineering.
                         </p>
                     </div>
 
@@ -26,22 +26,22 @@ export default function PartnershipSection() {
                         <FeatureCard
                             icon={<Calculator className="w-6 h-6" />}
                             title="Strategic Infrastructure Investment"
-                            desc="Shivmala mobilizes capital and expertise to execute large-scale civil and industrial projects across transport, water, and energy sectors. These investments support long-term development goals while generating tangible public value."
+                            desc="Shivmala brings domain expertise and skilled execution to large-scale civil and industrial projects including transport, drainage, housing, and water systems. We help drive regional progress while supporting long-term sustainability."
                         />
                         <FeatureCard
                             icon={<ArrowUpDown className="w-6 h-6" />}
                             title="Operational Independence"
-                            desc="As an independently managed enterprise, Shivmala retains full control over operations and project execution. This allows us to remain agile, uphold accountability, and maintain high standards across all our initiatives."
+                            desc="We continually invest in technology, project leadership, and manpower development to ensure unmatched quality. From smart roads to urban design, we deliver solutions that stand the test of time."
                         />
                         <FeatureCard
                             icon={<Building2 className="w-6 h-6" />}
                             title="Capability Expansion"
-                            desc="We continually invest in our talent, technology, and project management capacity to ensure we deliver innovative, high-quality infrastructure. From smart highways to sustainable housing, Shivmala builds for the future."
+                            desc="With a dedicated in-house team and a transparent process, Shivmala retains full control of execution. This ensures agile project delivery, zero compromise on safety, and complete accountability."
                         />
                         <FeatureCard
                             icon={<Scan className="w-6 h-6" />}
                             title="Scale of Impact"
-                            desc="With operations expanding across 30+ cities, Shivmala is on a mission to positively impact 100+ communities by 2030 through safe, efficient, and resilient infrastructure that improves quality of life and unlocks growth."
+                            desc="Operating in 30+ cities, Shivmala is on a mission to improve 100+ communities by 2030 through sustainable, efficient, and resilient infrastructure. We aim to enhance daily lives and unlock regional growth."
                         />
                     </div>
                 </div>

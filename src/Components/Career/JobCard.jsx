@@ -2,7 +2,7 @@ import React from 'react'
 import { MapPin, BriefcaseBusiness } from 'lucide-react'
 import CusButton from "../CusButton"
 
-export default function JobCard({ jobheading, joblocation, jobExperiece, jobdesc, jobposted }) {
+export default function JobCard({ jobheading, joblocation, jobExperiece, jobdesc, jobposted , onClick }) {
   return (
     <div className='flex flex-col p-6 sm:p-8 lg:p-10 border-[#0e0e0f38] border rounded-2xl hover:shadow-md hover:-translate-y-1 duration-200 transition-transform w-full max-w-xl shadow-black/20 bg-white'>
 
@@ -26,7 +26,7 @@ export default function JobCard({ jobheading, joblocation, jobExperiece, jobdesc
 
       <div className='pt-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3'>
         <p className='text-[#4B5563] text-sm'>{jobposted || "Posted 2 weeks ago"}</p>
-        <CusButton text={"View Details"} />
+        <CusButton text={"View Details"} onClick={onClick} />
       </div>
 
     </div>

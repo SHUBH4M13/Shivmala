@@ -18,7 +18,7 @@ export default function ServiceHeroSection() {
 
                 <div className='mt-6 px-6 lg:px-24 '>
                     <button
-                        className='px-6 py-3 bg-[#3B82F6] text-white rounded-md hover:bg-blue-600 transition'
+                        className='px-6 py-3 cursor-pointer bg-[#3B82F6] text-white rounded-md hover:bg-[#2676f7] transition duration-200'
                         onClick={() => navigate('/projects')}
                     >
                         View Projects

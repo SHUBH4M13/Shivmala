@@ -2,15 +2,15 @@ import React from 'react';
 
 export default function ImpactPatners() {
   const logos = [
-    'Prudential', 'Nuveen', 'IFC', 'European Investment Bank', 'Zurich',
-    'PineBridge', 'Triodos Bank', 'Rockefeller Foundation', 'Morgan Stanley',
-    'FnLock', 'HESTA', 'JP Morgan', 'Ford Foundation'
+    ' L&T Finance', 'Mahindra Infra Fund', 'Tata Capital', 'ICICI Ventures' , 'SBI Capital', 'HDFC Infra Fund',
+    'IDFC First', 'Aditya Birla Capital', 'JSW Investments', 'Shapoorji Pallonji Group',
+    'Asian Infrastructure Investment Bank', ' Housing Development Finance Corp',
   ];
 
   return (
     <section className="w-full px-6 sm:px-10 lg:px-20 py-14 bg-white text-black">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
-        
+
         <div className="w-full  lg:w-1/3 flex flex-col gap-2">
           <h2 className="text-2xl lg:sticky top-0  sm:text-4xl font-bold leading-tight">Partners in Impact</h2>
           <p className="text-sm text-gray-600">learn more abt our investors</p>
@@ -19,17 +19,16 @@ export default function ImpactPatners() {
         {/* Right Side Content */}
         <div className="w-full lg:w-2/3 flex flex-col gap-6">
           <h3 className="text-xl sm:text-2xl font-semibold leading-snug">
-            Shivmala connects investors to high-growth companies delivering essential services
-            to four billion emerging consumers on the rise.
+            Shivmala empowers development through strong partnerships
+            We collaborate with leading investors, developers, and institutions to build future-ready infrastructure across Maharashtra. By aligning with visionaries in public and private sectors, Shivmala delivers impactful, scalable, and sustainable civil projects that transform communities.
+
           </h3>
 
           <p className="text-gray-700 text-[15px] sm:text-base leading-relaxed">
-            Leading insurers and reinsurers spanning the US, Europe and Asia-Pacific, like the world’s
-            largest Insurer and Life Insurer, large institutional investors from the US, Europe and
-            Asia-Pacific, eight of the world’s largest Development Finance Institutions, and three of
-            the top four Investment Banks, and the world’s leading sustainability bank, trust Shivmala
-            to deliver returns and impact. <br />
-            <strong>Our 100+ investors include:</strong>
+            Our stakeholders include top financial and development partners who trust our vision of quality-driven infrastructure.
+            <br />
+            <strong>Our valued collaborators include:
+            </strong>
           </p>
 
           {/* Logos Grid */}
@@ -37,7 +36,7 @@ export default function ImpactPatners() {
             {logos.map((name, index) => (
               <div
                 key={index}
-                className="w-full h-[60px] flex items-center justify-center border border-gray-200 rounded-md bg-white shadow-sm hover:shadow-md transition"
+                className="w-full h-[60px] flex text-center items-center justify-center border border-gray-200 rounded-md bg-white shadow-sm hover:shadow-md transition"
               >
                 <span className="text-sm text-gray-500">{name}</span>
               </div>

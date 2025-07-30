@@ -28,7 +28,11 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Commercial"
-            ServiceDesc="Shivmala is a trusted and innovative construction company committed to delivering high-quality building solutions across residential, commercial, and industrial sectors. With a team of experienced professionals and a dedication to excellence, we offer a wide range of services including general contracting, project management, architectural planning, renovations, and turnkey construction solutions."
+            ServiceDesc="Shivmala Infrastructure Pvt. Ltd. delivers cutting-edge commercial construction solutions tailored to business
+            needs. We specialize in office buildings, retail complexes, and institutional infrastructure with a focus on
+            timely delivery, cost-efficiency, and structural quality. Our experienced team manages end-to-end project
+            execution, including architectural planning, design, permits, and turnkey delivery. We ensure durable,
+            future-ready commercial spaces that enhance functionality and value."
           />
         </div>
       </div>
@@ -39,7 +43,11 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Highway Construction"
-            ServiceDesc="Shivmala is a leading highway construction company dedicated to building safe, durable, and efficient road infrastructure. With extensive experience in large-scale transportation projects, we specialize in highway development, road widening, asphalt paving, bridge construction, and maintenance services. Our skilled team combines advanced engineering techniques with modern equipment to deliver projects that meet the highest standards of quality, safety, and environmental compliance. From initial planning and surveying to final execution, we ensure every project is completed on time and within budget, supporting the growth and connectivity of regions across the country."
+            ServiceDesc="Shivmala Infrastructure Pvt. Ltd. is a trusted name in highway construction, offering robust road infrastructure
+            services including asphalt paving, concrete road construction, and highway expansions. With advanced
+            machinery and strict safety and environmental standards, we deliver high-performance roads that improve
+            connectivity and withstand heavy traffic demands. Our team ensures compliance, precision, and delivery
+            within budget and timelines."
           />
         </div>
       </div>
@@ -50,7 +58,11 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Building Construction"
-            ServiceDesc="Shivmala is a reliable building construction company offering services in residential, commercial, and institutional projects. We handle everything from design to finishing, ensuring high-quality work, on-time delivery, and complete client satisfaction. Whether it's a home, office, or school, we build with care and precision."
+            ServiceDesc="At Shivmala Infrastructure Pvt. Ltd., we offer comprehensive building construction services for residential,
+            commercial, and institutional projects. From design to handover, we prioritize quality, aesthetics, and
+            structural integrity. Whether it's an apartment complex, office, or school, we deliver high-end construction that
+            meets client expectations and regulatory standards. Our focus is on sustainable building practices and
+            customer satisfaction."
           />
         </div>
       </div>
@@ -61,7 +73,10 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Architectural Design"
-            ServiceDesc="Shivmala is a specialized highway construction company committed to developing high-quality, long-lasting road infrastructure. We provide a full range of services including highway and expressway construction, asphalt and concrete paving, road widening, drainage systems, bridge construction, and routine maintenance. With a strong focus on safety, efficiency, and environmental standards, our experienced team uses advanced machinery and proven engineering practices to deliver projects on schedule and within budget. Whether it’s a new highway, an upgrade to existing roads, or critical repair work, we take pride in building transportation networks that improve connectivity and support regional development."
+            ServiceDesc="Our architectural design services at Shivmala Infrastructure Pvt. Ltd. blend innovation with practicality. We
+            provide planning, 3D visualization, layout development, and approval drawings for residential, commercial,
+            and public infrastructure. Our experienced architects ensure all designs are Vastu-compliant, efficient, and
+            aesthetically pleasing. We align creativity with engineering precision to deliver transformative spaces."
           />
         </div>
       </div>
@@ -72,7 +87,10 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Interior Design"
-            ServiceDesc="Shivmala is a professional interior design firm dedicated to creating stylish, functional, and personalized spaces for residential, commercial, and hospitality clients. Our services include space planning, concept development, 3D visualization, furniture selection, lighting design, and full interior execution. Whether it’s transforming a home, office, retail store, or hotel, our team blends creativity with practicality to deliver interiors that reflect each client's vision and lifestyle. From modern minimalism to classic elegance, we handle every project with attention to detail, quality craftsmanship, and a strong commitment to client satisfaction."
+            ServiceDesc="Shivmala Infrastructure Pvt. Ltd. provides interior design services for homes, offices, retail, and hospitality
+            spaces. We offer space planning, furniture layout, color palette selection, lighting design, and full execution.
+            Our interiors reflect client lifestyle and vision, combining elegance with functionality. From modern minimalism
+            to traditional themes, we create inspiring, practical interiors."
           />
         </div>
       </div>
@@ -83,7 +101,10 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Drainage Line Construction"
-            ServiceDesc="Shivmala specializes in the design and construction of efficient and durable drainage systems. We offer comprehensive services including stormwater drainage, sewer line installation, pipeline laying, trenching, and maintenance solutions. Our experienced team ensures that every project meets environmental and safety standards while effectively managing water flow to prevent flooding and erosion. Whether for residential layouts, commercial zones, or large-scale infrastructure projects, we deliver reliable drainage solutions tailored to site-specific needs."
+            ServiceDesc="Our expert team at Shivmala Infrastructure Pvt. Ltd. designs and constructs efficient drainage and sewage
+            systems, including stormwater drains, sewage lines, and pipelines. We use modern trenching and laying
+            techniques to prevent waterlogging and ensure environmental compliance. Our solutions are tailored to
+            residential layouts, urban developments, and industrial zones."
           />
         </div>
       </div>
@@ -94,7 +115,10 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Bridge n Culvert Construction"
-            ServiceDesc="Shivmala specializes in the construction of high-quality bridges and culverts, essential components of modern transportation infrastructure. We offer end-to-end solutions including design, excavation, formwork, reinforcement, concreting, and finishing. Our skilled engineers and construction teams ensure structural strength, durability, and safety in every project, whether it's a small box culvert or a large-span bridge. Using advanced construction techniques and adhering to all regulatory standards, we deliver reliable structures that improve connectivity and withstand environmental challenges."
+            ServiceDesc="Shivmala Infrastructure Pvt. Ltd. excels in bridge and culvert construction, delivering durable, load-bearing
+            structures. We handle complete project lifecycle - from structural design and reinforcement to concreting and
+            finishing. Our team ensures safety, strength, and regulatory compliance for every project, whether it's small
+            culverts or major river-crossing bridges."
           />
         </div>
       </div>
@@ -105,7 +129,10 @@ export default function Services() {
         <div className="w-full lg:w-1/2">
           <ServiceText
             ServiceHeading="Watertanks n Overhead Constructions"
-            ServiceDesc="Shivmala  specializes in the construction of durable water tanks and overhead storage structures for residential, commercial, and municipal applications. We offer complete solutions including design, structural engineering, foundation work, RCC tank construction, steel tank fabrication, and waterproofing. Our overhead water tanks are built to ensure long-term strength, safety, and efficient water distribution. With a focus on quality materials, precision engineering, and adherence to industry standards, we deliver reliable storage systems that support daily water needs and infrastructure development."
+            ServiceDesc="We design and construct durable water tanks and overhead storage systems for residential colonies,
+            industries, and public utilities. Our solutions include RCC tank construction, structural engineering,
+            waterproofing, and pipeline integration. Shivmala Infrastructure Pvt. Ltd. ensures long-lasting, hygienic water
+            storage solutions that meet capacity demands and safety norms."
           />
         </div>
       </div>

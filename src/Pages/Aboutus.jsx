@@ -12,8 +12,10 @@ export default function Aboutus() {
             <div className="text-center">
                 <p className="text-textblue font-bold text-4xl sm:text-5xl md:text-6xl p-6">About us</p>
                 <p className="px-4 sm:px-16 md:px-32 text-[16px] sm:text-[18px] text-gray-700 leading-relaxed">
-                    Established in April 2025, Shivmala Infrastructure Pvt Ltd brings over 9 years of prior civil engineering experience dating back to 2016.
-                    We are a professional and passionate team delivering excellence in infrastructure, building, road, interior, and drainage works across Maharashtra.
+                    Established in April 2025, Shivmala Infrastructure Pvt.Ltd.
+                    brings over 9 years of cumulative experience, dating back to 2016.
+                    We are a professional and passionate team delivering excellence in civil engineering projects across Maharashtra.
+                    Our focus includes future-ready building solutions, road construction, interior design, and drainage systems—shaping smart, s
                 </p>
             </div>
 
@@ -40,8 +42,8 @@ export default function Aboutus() {
                         <div className="flex-1">
                             <h2 className="text-2xl sm:text-3xl font-bold text-textblue mb-3">Business Motto</h2>
                             <p className="text-base sm:text-lg leading-relaxed">
-                                To be a trusted leader in civil infrastructure development, delivering innovative and sustainable solutions that shape the future... <br />
-                                & To provide quality civil engineering services with integrity, professionalism, and a commitment to excellence.
+                                To be trusted leaders in civil infrastructure development, delivering innovative and sustainable solutions that shape the future.
+                                To provide quality civil engineering services with integrity, professionalism, and a commitment to excellence.
                             </p>
                         </div>
                     </div>
@@ -56,8 +58,9 @@ export default function Aboutus() {
                         <div className="flex-1">
                             <h2 className="text-2xl sm:text-3xl font-bold text-textblue mb-3">Quality Policy</h2>
                             <p className="text-base sm:text-lg leading-relaxed">
-                                Shivmala Engineers and Consultants is committed to strive for quality of services in terms of customer satisfaction and required global standards. We're certified by TUV Nord for implementing Quality Management System as per ISO 9001.<br />
-                                We aim for continuous, sustained and economical development by reducing wastage of resources, applying minimum time cycle and managing funds.
+                                Shivmala Engineers and Consultants is committed to delivering client satisfaction and adhering to global quality standards.
+                                We are certified by TUV Nord for implementing ISO 9001 Quality Management Systems.
+                                We aim for continuous, sustainable, and economical development by minimizing resource waste and optimizing project cycles
                             </p>
                         </div>
                     </div>
@@ -72,9 +75,10 @@ export default function Aboutus() {
                 <div className="max-w-5xl">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textblue mb-6">DIRECTOR’S MESSAGE</h2>
                     <p className="text-base sm:text-lg leading-relaxed">
-                        Mr. Shivaji Marutirao More &amp; Mrs. Ratnamala Shivajirao More &nbsp;
-                        As Directors of Shivmala Infrastructure Pvt Ltd, we believe in creating a solid foundation, not only in concrete but also in relationships and reputation. <br />
-                        Our journey from fieldwork to a recognized brand is built on experience, trust, and continuous learning.
+                    Mr. Shivaji Marutirao More &amp; Mrs. Ratnamala Shivajirao More , as Directors of Shivmala Infrastructure Pvt.
+                        Ltd., have laid a solid foundation not only in concrete but also in values.
+                        Our journey from fieldwork to a recognized brand is built on trust, continuous learning, and meaningful relationships.
+                        We continue to lead with experience and a vision for inclusive growth.
                     </p>
                 </div>
 
@@ -92,8 +96,13 @@ export default function Aboutus() {
                         ].map((member, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-xl shadow-md hover:shadow-lg duration-200 px-6 py-5 text-center border border-gray-200"
+                                className="bg-white flex flex-col items-center gap-4  rounded-xl hover:shadow-lg duration-200 px-6 py-5 text-center "
                             >
+                                
+                                <img
+                                className=' w-[100px] h-[100px] rounded-full'
+                                src="" alt="" />
+
                                 <p className="font-semibold text-black mb-2">{member.role}</p>
                                 <p className="text-gray-700">{member.name}</p>
                             </div>

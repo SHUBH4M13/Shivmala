@@ -20,12 +20,10 @@ export default function HeroSection() {
         >
           <div className="flex flex-col">
             <p className="font-extrabold text-4xl sm:text-5xl leading-tight">
-              Infrastructure leaders building communities
+              Infrastructure Leaders Building Communities
             </p>
             <p className="pt-5 text-base sm:text-lg">
-              Tough problems require innovative solutions. Now is the time <br />
-              to be bold. Shivmala members engineer tomorrow and <br />
-              reimagine infrastructure. Move forward faster with Shivmala.
+              Tough problems require innovative solutions. At Shivmala, we engineer tomorrow’s infrastructure today. Join us as we move fo
             </p>
           </div>
 
@@ -37,7 +35,7 @@ export default function HeroSection() {
 
       <div className="w-full md:w-1/2 h-[300px] sm:h-[450px] md:h-[453px] overflow-hidden">
         <video
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-cover"
           src={ConstrcutionVideo}
           controls
           autoPlay

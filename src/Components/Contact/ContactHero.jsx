@@ -36,8 +36,8 @@ export default function ContactHero() {
                     viewport={{ once: true }}
                 >
                     <p className="text-base sm:text-lg text-black max-w-3xl">
-                        The SHIVMALA family is an independent construction company that carries
-                        out diverse operations in the buildings, civil, industrial and special project sectors.
+                        The SHIVMALA family is a fast-growing, independent construction company operating across urban and rural India. With a strong presence in the building, civil, industrial, and infrastructure sectors, our branch offices ensure seamless project execution and regional outreach.
+
                     </p>
                 </motion.div>
             </div>
