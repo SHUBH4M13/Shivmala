@@ -16,7 +16,7 @@ export default function NewsText({
       </span>
 
       {/* Title */}
-      <span className={`font-semibold hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug ${titleSize}`}>
+              <span className={`font-emphasis-heavy hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug ${titleSize}`}>
         {title}
       </span>
 

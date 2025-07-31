@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePhoto from "../../assets/ServicePhoto.png"
+import ServicePhoto from "../../assets/ServicePhoto.jpg"
 import { useNavigate } from 'react-router'
 
 export default function ServiceHeroSection() {
@@ -9,10 +9,10 @@ export default function ServiceHeroSection() {
         <div className='flex flex-col-reverse lg:flex-row bg-white justify-between items-center  py-10 gap-10'>
 
             <div className="text-center lg:text-left w-full lg:w-2/3">
-                <p className='font-bold text-4xl px-6 lg:px-24 sm:text-5xl lg:text-7xl leading-snug'>
+                <p className='font-boldness text-4xl px-6 lg:px-24 sm:text-5xl lg:text-7xl leading-snug'>
                     Building a <br />Concrete Future
                 </p>
-                <p className='text-xl px-6 lg:px-24 sm:text-2xl font-light mt-4'>
+                <p className='text-xl px-6 lg:px-24 sm:text-2xl font-body mt-4'>
                     Honest, Reliable Builders since 1968
                 </p>
 
@@ -26,9 +26,9 @@ export default function ServiceHeroSection() {
                 </div>
             </div>
 
-            <div>
+            <div className=' px-10 '>
                 <img
-                    className='h-[400px] w-[350px]'
+                    className='h-[400px] rounded-xl shadow-md w-[700px]'
                     src={ServicePhoto}
                     alt="ServicePhoto"
                 />

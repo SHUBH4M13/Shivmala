@@ -24,7 +24,7 @@ export default function ProjectInfo({
       <div>
         <button
           onClick={() => navigate("/projects")}
-          className="flex items-center text-blueEnd hover:text-blueStart font-medium text-base transition"
+                      className="flex items-center text-blueEnd hover:text-blueStart font-emphasis text-base transition"
         >
           <ArrowLeft size={20} className="mr-2" />
           Back
@@ -33,7 +33,7 @@ export default function ProjectInfo({
 
       {/* Heading */}
       <div>
-        <h1 className="text-3xl sm:text-4xl text-center font-bold text-gray-900">
+        <h1 className="text-3xl sm:text-4xl text-center font-boldness text-gray-900">
           {InfoHeading}
         </h1>
       </div>
@@ -58,7 +58,7 @@ export default function ProjectInfo({
 
       {/* Subheading */}
       <div>
-        <h2 className="text-center text-2xl sm:text-3xl font-bold text-blue-800">
+        <h2 className="text-center text-2xl sm:text-3xl font-boldness text-blue-800">
           {ProjectSubHeading}
         </h2>
       </div>
@@ -84,7 +84,7 @@ export default function ProjectInfo({
 function Box({ BoxHeading, BoxText }) {
   return (
     <div className="p-6 border-[2px] border-gray-300/50 rounded-lg shadow-sm bg-white hover:shadow-md transition duration-200">
-      <h3 className="font-bold text-lg sm:text-xl mb-2 text-gray-900">
+              <h3 className="font-boldness text-lg sm:text-xl mb-2 text-gray-900">
         {BoxHeading}
       </h3>
       <p className="text-gray-700 text-sm sm:text-base">{BoxText}</p>

@@ -36,7 +36,7 @@ export default function Navbar() {
 
       {/* Desktop Nav */}
       <div className='hidden lg:flex w-2/3 items-center justify-end'>
-        <ul className='flex gap-8 font-semibold'>
+        <ul className='flex gap-8 font-emphasis-heavy'>
           {routes.map(({ option, path }) => (
             <li
               key={path}
@@ -59,7 +59,7 @@ export default function Navbar() {
             <MoveLeft size={28} />
           </button>
 
-          <ul className='flex flex-col gap-6 text-center font-semibold'>
+          <ul className='flex flex-col gap-6 text-center font-emphasis-heavy'>
             {routes.map(({ option, path }) => (
               <li
                 key={path}

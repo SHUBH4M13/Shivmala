@@ -18,7 +18,7 @@ export default function PassionForward() {
   return (
     <div className='w-full h-fit flex flex-col gap-10 items-center px-4 sm:px-10 py-10 sm:py-20'>
 
-      <p className=' font-bold text-4xl  text-HoverBlue'>Moving the profession forward</p>
+                  <p className=' font-boldness text-4xl  text-HoverBlue'>Moving the profession forward</p>
 
       <motion.div 
       initial={{ opacity: 0, x: initialX }}

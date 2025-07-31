@@ -26,10 +26,7 @@ export default function Jumpstart() {
                     photo={jumpstartp1}
                     heading1={"FOR STUDENTS"}
                     heading2={"SHIVMALA on Campus"}
-                    text1="Make a difference in the civil engineering professional
-        community while still in college. Enjoy mentorship
-        connections, networking opportunities and educational
-        resources. For free."
+                    text1="Join the Shivmala community while in college and make a real difference in the civil engineering profession. Our campus program offers mentorship, career networking opportunities, and access to educational resources – all for free!"
                     ButtonText={"Learn more"}
                 />
             </div>

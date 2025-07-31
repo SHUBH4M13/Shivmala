@@ -6,7 +6,7 @@ export default function JobCard({ jobheading, joblocation, jobExperiece, jobdesc
   return (
     <div className='flex flex-col p-6 sm:p-8 lg:p-10 border-[#0e0e0f38] border rounded-2xl hover:shadow-md hover:-translate-y-1 duration-200 transition-transform w-full max-w-xl shadow-black/20 bg-white'>
 
-      <p className='text-xl sm:text-2xl text-[#1F2937] font-semibold'>{jobheading || "E3D/ SP3D Instrumentation Designer"}</p>
+              <p className='text-xl sm:text-2xl text-[#1F2937] font-emphasis-heavy'>{jobheading || "E3D/ SP3D Instrumentation Designer"}</p>
 
       <div className='flex flex-wrap gap-x-6 gap-y-2 pt-4'>
         <div className='flex items-center gap-1'>

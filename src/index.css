@@ -12,3 +12,28 @@
   --font-sans: "Mulish", sans-serif;
   --font-heading: "Geist", sans-serif;
 }
+
+/* Custom font weight classes for new typography guidelines */
+.font-boldness {
+  font-weight: 600;
+}
+
+.font-boldness-heavy {
+  font-weight: 700;
+}
+
+.font-body {
+  font-weight: 300;
+}
+
+.font-body-medium {
+  font-weight: 400;
+}
+
+.font-emphasis {
+  font-weight: 500;
+}
+
+.font-emphasis-heavy {
+  font-weight: 600;
+}

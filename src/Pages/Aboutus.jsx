@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import AboutUsPhoto from "../assets/AboutUsPhoto.png"
+import aboutusvector from "../assets/aboutusvector.jpg"
 import { Info, Settings } from "lucide-react"
 
 export default function Aboutus() {
@@ -10,12 +10,9 @@ export default function Aboutus() {
             <Navbar />
 
             <div className="text-center">
-                <p className="text-textblue font-bold text-4xl sm:text-5xl md:text-6xl p-6">About us</p>
+                <p className="text-textblue font-boldness text-4xl sm:text-5xl md:text-6xl p-6">About us</p>
                 <p className="px-4 sm:px-16 md:px-32 text-[16px] sm:text-[18px] text-gray-700 leading-relaxed">
-                    Established in April 2025, Shivmala Infrastructure Pvt.Ltd.
-                    brings over 9 years of cumulative experience, dating back to 2016.
-                    We are a professional and passionate team delivering excellence in civil engineering projects across Maharashtra.
-                    Our focus includes future-ready building solutions, road construction, interior design, and drainage systems—shaping smart, s
+                Shivmala Infrastructure is a leading provider of innovative engineering and construction solutions. Since our inception, we have focused on building sustainable, robust, and scalable infrastructure solutions that meet the needs of communities and industries. Our expertise spans civil engineering, construction, and technology-driven solutions, making us a trusted partner in the development of critical infrastructure projects.
                 </p>
             </div>
 
@@ -23,8 +20,8 @@ export default function Aboutus() {
 
                 <div className="w-full lg:w-1/2 max-w-[500px]">
                     <img
-                        className="rounded-3xl w-full h-auto object-cover shadow-md"
-                        src={AboutUsPhoto}
+                        className="w-full h-full"
+                        src={aboutusvector}
                         alt="AboutUsPhoto"
                     />
                 </div>
@@ -34,13 +31,8 @@ export default function Aboutus() {
 
                     {/* Business Motto */}
                     <div className="flex flex-col sm:flex-row gap-6 items-start">
-                        <div className="flex-shrink-0">
-                            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-black flex items-center justify-center rounded-lg">
-                                <Info color="white" size={28} />
-                            </div>
-                        </div>
                         <div className="flex-1">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-textblue mb-3">Business Motto</h2>
+                            <h2 className="text-2xl sm:text-3xl font-boldness text-textblue mb-3">Business Motto</h2>
                             <p className="text-base sm:text-lg leading-relaxed">
                                 To be trusted leaders in civil infrastructure development, delivering innovative and sustainable solutions that shape the future.
                                 To provide quality civil engineering services with integrity, professionalism, and a commitment to excellence.
@@ -50,13 +42,8 @@ export default function Aboutus() {
 
                     {/* Quality Policy */}
                     <div className="flex flex-col sm:flex-row gap-6 items-start">
-                        <div className="flex-shrink-0">
-                            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-black flex items-center justify-center rounded-lg">
-                                <Settings color="white" size={28} />
-                            </div>
-                        </div>
                         <div className="flex-1">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-textblue mb-3">Quality Policy</h2>
+                            <h2 className="text-2xl sm:text-3xl font-boldness text-textblue mb-3">Quality Policy</h2>
                             <p className="text-base sm:text-lg leading-relaxed">
                                 Shivmala Engineers and Consultants is committed to delivering client satisfaction and adhering to global quality standards.
                                 We are certified by TUV Nord for implementing ISO 9001 Quality Management Systems.
@@ -73,7 +60,7 @@ export default function Aboutus() {
 
                 {/* Director's Message */}
                 <div className="max-w-5xl">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textblue mb-6">DIRECTOR’S MESSAGE</h2>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-boldness text-textblue mb-6">DIRECTOR'S MESSAGE</h2>
                     <p className="text-base sm:text-lg leading-relaxed">
                     Mr. Shivaji Marutirao More &amp; Mrs. Ratnamala Shivajirao More , as Directors of Shivmala Infrastructure Pvt.
                         Ltd., have laid a solid foundation not only in concrete but also in values.
@@ -84,7 +71,7 @@ export default function Aboutus() {
 
                 {/* Our Team */}
                 <div className="w-full">
-                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-textblue mb-8">OUR TEAM</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-boldness text-textblue mb-8">OUR TEAM</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
                         {[
@@ -103,7 +90,7 @@ export default function Aboutus() {
                                 className=' w-[100px] h-[100px] rounded-full'
                                 src="" alt="" />
 
-                                <p className="font-semibold text-black mb-2">{member.role}</p>
+                                <p className="font-emphasis-heavy text-black mb-2">{member.role}</p>
                                 <p className="text-gray-700">{member.name}</p>
                             </div>
                         ))}

@@ -9,7 +9,7 @@ export default function Investorshero() {
                 className="w-full h-full object-cover z-0"
             />
             <div className="absolute p-30 inset-0 z-10 flex items-center justify-start">
-                <span className="text-white text-7xl font-bold drop-shadow-md">
+                <span className="text-white text-7xl font-boldness drop-shadow-md">
                     Our Investors
                 </span>
             </div>

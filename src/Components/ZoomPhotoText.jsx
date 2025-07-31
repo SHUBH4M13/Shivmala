@@ -23,7 +23,7 @@ export default function ZoomPhotoText({ photo, heading1, heading2, text1, Button
       {text1 && (
         <div className="pt-3 sm:pt-4">
           <p
-            className={`leading-relaxed whitespace-pre-line text-[16px] sm:text-[17px] md:text-[18px] font-normal text-gray-800 ${textalign ? textalign : 'text-left'
+            className={`leading-relaxed whitespace-pre-line text-[16px] sm:text-[17px] md:text-[18px] font-body-medium text-gray-800 ${textalign ? textalign : 'text-left'
               }`}
           >
             {text1}

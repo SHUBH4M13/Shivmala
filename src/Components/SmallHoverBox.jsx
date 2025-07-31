@@ -8,17 +8,17 @@ export default function SmallHoverBox({ heading1, heading2, heading3 }) {
         {heading1 && (
           <>
             <div className='w-[5px] h-[30px] rounded-xl bg-gradient-to-b from-[#9FD64D] to-[#2297B6]'></div>
-            <p className='uppercase font-semibold text-[15px]'>{heading1}</p>
+            <p className='uppercase font-emphasis-heavy text-[15px]'>{heading1}</p>
           </>
         )}
       </div>
 
-      <div className='w-full font-bold text-[20px] sm:text-[24px]'>
+              <div className='w-full font-boldness text-[20px] sm:text-[24px]'>
         <p>{heading2}</p>
       </div>
 
       <div>
-        <p className='font-light text-[16px] sm:text-[18px]'>{heading3}</p>
+        <p className='font-body text-[16px] sm:text-[18px]'>{heading3}</p>
       </div>
 
     </div>

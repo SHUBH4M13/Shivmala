@@ -129,8 +129,8 @@ export default function Careers() {
         <div className="min-h-screen w-full bg-white text-black">
           <div className="bg-gradient-to-r from-blue-800 to-blue-500 text-white py-12 px-6 sm:px-12 relative">
             <div className="max-w-5xl mx-auto">
-              <h3 className="text-lg sm:text-xl mb-2 font-semibold">Shivmala Engineers & Consultant</h3>
-              <h1 className="text-3xl sm:text-4xl font-bold mb-4">{selectedJob.jobheading}</h1>
+              <h3 className="text-lg sm:text-xl mb-2 font-emphasis-heavy">Shivmala Engineers & Consultant</h3>
+              <h1 className="text-3xl sm:text-4xl font-boldness mb-4">{selectedJob.jobheading}</h1>
               <div className="flex flex-wrap items-center gap-6 text-white/90">
                 <div className="flex items-center gap-2">
                   <MapPin size={18} />
@@ -143,7 +143,7 @@ export default function Careers() {
               </div>
             </div>
             <button
-              className="absolute right-6 top-6 bg-white text-black text-sm font-semibold px-4 py-1 rounded-full shadow hover:bg-gray-100 transition"
+                              className="absolute right-6 top-6 bg-white text-black text-sm font-emphasis-heavy px-4 py-1 rounded-full shadow hover:bg-gray-100 transition"
               onClick={handleBackClick}
             >
               BACK
@@ -154,16 +154,16 @@ export default function Careers() {
             <div className="bg-gray-100 rounded-xl p-6 shadow-sm">
               <div className="flex flex-col sm:flex-row justify-between mb-6">
                 <div>
-                  <h4 className="text-sm font-bold text-gray-600">EXPERIENCE REQUIRED</h4>
-                  <p className="font-medium text-base">{selectedJob.jobExperience}</p>
+                  <h4 className="text-sm font-boldness text-gray-600">EXPERIENCE REQUIRED</h4>
+                  <p className="font-emphasis text-base">{selectedJob.jobExperience}</p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-gray-600">EDUCATIONAL BACKGROUND</h4>
-                  <p className="font-medium text-base">{selectedJob.jobEducation}</p>
+                  <h4 className="text-sm font-boldness text-gray-600">EDUCATIONAL BACKGROUND</h4>
+                  <p className="font-emphasis text-base">{selectedJob.jobEducation}</p>
                 </div>
               </div>
 
-              <h3 className="text-lg font-semibold mb-4">Job Description</h3>
+              <h3 className="text-lg font-emphasis-heavy mb-4">Job Description</h3>
               <div className="text-[15px] leading-relaxed text-gray-800 space-y-3">
                 {selectedJob.jobdetails.map((item, index) => (
                   <p key={index}>• {item}</p>
@@ -172,7 +172,7 @@ export default function Careers() {
             </div>
 
             <div className="flex justify-center mt-8">
-              <button className="bg-white border-2 border-blue-700 text-blue-700 font-semibold px-6 py-3 rounded-full hover:bg-blue-700 hover:text-white transition-all duration-200">
+              <button className="bg-white border-2 border-blue-700 text-blue-700 font-emphasis-heavy px-6 py-3 rounded-full hover:bg-blue-700 hover:text-white transition-all duration-200">
                 Tender an application for this job
               </button>
             </div>
@@ -182,7 +182,7 @@ export default function Careers() {
         <div>
           <div className="w-full bg-gradient-to-b from-[#1E40AF] to-[#3B82F6] text-white py-12 px-4 sm:px-6 lg:px-12">
             <div className="max-w-5xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Join Our Team</h2>
+              <h2 className="text-3xl sm:text-4xl font-boldness mb-4">Join Our Team</h2>
               <p className="text-base sm:text-lg mb-8 text-white/80">
                 Discover exciting opportunities and be part of something great. <br />
                 We're always looking for talented individuals to join our team.

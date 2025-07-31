@@ -7,7 +7,7 @@ export default function ServiceText({ ServiceHeading, ServiceDesc, Side = "start
         <div className={`flex flex-col ${alignment} gap-4`}>
             <div className='w-[40px] bg-black h-[1px]'></div>
 
-            <div className='font-bold text-4xl sm:text-5xl leading-snug'>
+            <div className='font-boldness text-4xl sm:text-5xl leading-snug'>
                 <p>{ServiceHeading}</p>
             </div>
 

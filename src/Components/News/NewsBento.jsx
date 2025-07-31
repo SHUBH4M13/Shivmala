@@ -5,7 +5,7 @@ export default function NewsBento({ TopStories }) {
     return (
         <div className='w-full'>
             <div>
-                <span className='px-6 sm:px-10 lg:px-20 py-10 text-blueEnd text-xl sm:text-2xl lg:text-3xl uppercase font-bold'>
+                <span className='px-6 sm:px-10 lg:px-20 py-10 text-blueEnd text-xl sm:text-2xl lg:text-3xl uppercase font-boldness'>
                     Top Stories
                 </span>
 

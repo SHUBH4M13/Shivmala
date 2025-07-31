@@ -51,7 +51,7 @@ export default function Projects() {
           <img src={Photo7} alt="Building Tomorrow" className="w-full h-auto object-contain" />
         </div>
         <div className="w-full max-w-[450px] text-center lg:text-left">
-          <h2 className="font-bold text-3xl sm:text-4xl lg:text-5xl">Building Tomorrow</h2>
+                          <h2 className="font-boldness text-3xl sm:text-4xl lg:text-5xl">Building Tomorrow</h2>
           <p className="pt-5 text-base sm:text-lg text-gray-800">
             SHIVMALA's focus is on ensuring today's civil engineers gain the necessary knowledge, skills, and experience to sustain the profession in the future.
           </p>

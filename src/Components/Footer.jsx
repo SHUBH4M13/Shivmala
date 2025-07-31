@@ -11,7 +11,7 @@ export default function Footer() {
 
                 {/* Navigation Lists */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-12 w-full md:w-1/2">
-                    <ul className="font-semibold space-y-3 text-left">
+                    <ul className="font-emphasis-heavy space-y-3 text-left">
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Home</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/aboutus") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">About us</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/services") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Services</li>
@@ -19,7 +19,7 @@ export default function Footer() {
                         <li className="text-lg cursor-pointer hover:text-primaryblue duration-200">Help</li>
                     </ul>
 
-                    <ul className="font-semibold space-y-3 text-left">
+                    <ul className="font-emphasis-heavy space-y-3 text-left">
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/contactus") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Contact us</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/projects") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Projects</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/career") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Career & Growth</li>
@@ -50,7 +50,7 @@ export default function Footer() {
                             ))}
                         </div>
 
-                        <div className="w-fit px-4 py-2 rounded-2xl border-[2px] border-primaryblue cursor-pointer hover:bg-primaryblue hover:text-white transition text-sm font-medium">
+                        <div className="w-fit px-4 py-2 rounded-2xl border-[2px] border-primaryblue cursor-pointer hover:bg-primaryblue hover:text-white transition text-sm font-emphasis">
                             Chat on WhatsApp
                         </div>
                     </div>

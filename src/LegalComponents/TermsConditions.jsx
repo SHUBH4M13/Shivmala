@@ -6,19 +6,19 @@ export default function TermsConditions() {
     <div className='flex flex-col gap-5 mb-10 '>
         
 
-        <div className='font-extrabold text-3xl text-center'>
+        <div className='font-boldness-heavy text-3xl text-center'>
                 <p>Privacy Policy</p>
             </div>
 
             <div className='flex flex-col items-center'>
                 <div className='flex gap-4'>
                     <House />
-                    <p className="font-semibold">Shivmala Home</p>
+                    <p className="font-emphasis-heavy">Shivmala Home</p>
                 </div>
             </div>
 
             <div className="w-full max-w-5xl mx-auto px-4 mt-5">
-                <p className="whitespace-normal text-center font-bold text-xl text-balance leading-relaxed text-gray-800">
+                <p className="whitespace-normal text-center font-boldness text-xl text-balance leading-relaxed text-gray-800">
                     The American Society of Civil Engineers (SHIVMALA) offers a variety of meetings, events, and activities that provide opportunities to learn, grow professionally, and exchange ideas; and, where all participants can participate fully in an atmosphere that is free of harassment and discrimination based on any identity-based factors.
                 </p>
             </div>

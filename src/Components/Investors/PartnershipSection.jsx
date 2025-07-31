@@ -8,14 +8,14 @@ export default function PartnershipSection() {
 
                 {/* Left Section */}
                 <div className="w-full lg:w-1/3 space-y-2">
-                    <h2 className="text-2xl lg:sticky top-0 sm:text-3xl font-bold">Partnership for a New Era</h2>
-                    <p className="text-sm text-gray-600 font-semibold">Read the announcements</p>
+                    <h2 className="text-2xl lg:sticky top-0 sm:text-3xl font-boldness">Partnership for a New Era</h2>
+                    <p className="text-sm text-gray-600 font-emphasis-heavy">Read the announcements</p>
                 </div>
 
                 {/* Right Section */}
                 <div className="w-full lg:w-2/3 space-y-6">
                     <div>
-                        <h3 className="text-2xl sm:text-3xl font-bold">TEEGAAT</h3>
+                        <h3 className="text-2xl sm:text-3xl font-boldness">TEEGAAT</h3>
                         <p className="text-gray-700 mt-3 text-[15px] sm:text-base leading-relaxed">
                             Shivmala Infrastructure is shaping India’s future with forward-thinking construction solutions that uplift both urban and rural environments. Our strategic alliances with public and private entities help overcome infrastructure challenges through innovation, quality, and smart engineering.
                         </p>
@@ -56,7 +56,7 @@ function FeatureCard({ icon, title, desc }) {
         <div className="flex items-start gap-4">
             <div className="text-black mt-1">{icon}</div>
             <div>
-                <h4 className="font-semibold text-lg mb-1">{title}</h4>
+                <h4 className="font-emphasis-heavy text-lg mb-1">{title}</h4>
                 <p className="text-sm text-gray-700 leading-relaxed">{desc}</p>
             </div>
         </div>

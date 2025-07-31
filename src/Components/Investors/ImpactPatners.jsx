@@ -12,13 +12,13 @@ export default function ImpactPatners() {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
 
         <div className="w-full  lg:w-1/3 flex flex-col gap-2">
-          <h2 className="text-2xl lg:sticky top-0  sm:text-4xl font-bold leading-tight">Partners in Impact</h2>
+          <h2 className="text-2xl lg:sticky top-0  sm:text-4xl font-boldness leading-tight">Partners in Impact</h2>
           <p className="text-sm text-gray-600">learn more abt our investors</p>
         </div>
 
         {/* Right Side Content */}
         <div className="w-full lg:w-2/3 flex flex-col gap-6">
-          <h3 className="text-xl sm:text-2xl font-semibold leading-snug">
+          <h3 className="text-xl sm:text-2xl font-emphasis-heavy leading-snug">
             Shivmala empowers development through strong partnerships
             We collaborate with leading investors, developers, and institutions to build future-ready infrastructure across Maharashtra. By aligning with visionaries in public and private sectors, Shivmala delivers impactful, scalable, and sustainable civil projects that transform communities.
 

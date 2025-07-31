@@ -5,37 +5,37 @@ export default function Privacy() {
     return (
         <div className='flex flex-col gap-5 mb-10'>
 
-            <div className='font-extrabold text-3xl text-center'>
+            <div className='font-boldness-heavy text-3xl text-center'>
                 <p>Privacy Policy</p>
             </div>
 
             <div className='flex flex-col items-center'>
                 <div className='flex gap-4'>
                     <House />
-                    <p className="font-semibold">Shivmala Home</p>
+                    <p className="font-emphasis-heavy">Shivmala Home</p>
                 </div>
             </div>
 
             <div className="w-full max-w-5xl mx-auto px-4 mt-5">
-                <p className="whitespace-normal text-center font-bold text-xl text-balance leading-relaxed text-gray-800">
+                <p className="whitespace-normal text-center font-boldness text-xl text-balance leading-relaxed text-gray-800">
                     The American Society of Civil Engineers (SHIVMALA) offers a variety of meetings, events, and activities that provide opportunities to learn, grow professionally, and exchange ideas; and, where all participants can participate fully in an atmosphere that is free of harassment and discrimination based on any identity-based factors.
                 </p>
             </div>
 
             <div className="w-full max-w-5xl mx-auto px-4 mt-6 space-y-6">
-                <p className="whitespace-pre-wrap text-[16px] text-gray-800 leading-relaxed font-sans">
+                <p className="whitespace-pre-wrap text-[16px] text-gray-800 leading-relaxed font-body-medium">
                     <strong>What information does SHIVMALA collect?</strong><br />
                     To better serve our members and customers, SHIVMALA collects information that you provide to us, such as personal information you provide when purchasing a product or service, as well as information that is passively or automatically collected from you, such as anonymous information collected from your browser or device.
                 </p>
 
-                <p className="text-[16px] font-bold text-gray-900">Information you provide</p>
+                <p className="text-[16px] font-boldness text-gray-900">Information you provide</p>
 
-                <p className="text-[16px] text-gray-800 leading-relaxed font-sans">
+                <p className="text-[16px] text-gray-800 leading-relaxed font-body-medium">
                     There are a number of areas in the SHIVMALA digital properties where we ask for and collect information about you, including personally identifiable information. Examples of this information include:
                 </p>
             </div>
 
-            <pre className=" w-full max-w-5xl mx-auto px-4 mt-5 whitespace-pre-wrap text-[16px] text-gray-800 leading-relaxed font-sans">
+            <pre className=" w-full max-w-5xl mx-auto px-4 mt-5 whitespace-pre-wrap text-[16px] text-gray-800 leading-relaxed font-body-medium">
                 There are a number of areas in the SHIVMALA digital properties where we ask for and collect information about you, including personally identifiable information. Examples of this information include:
                 name, address, email, telephone number
                 educational and professional experience information

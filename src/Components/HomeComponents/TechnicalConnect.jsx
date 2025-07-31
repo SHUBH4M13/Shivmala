@@ -16,63 +16,52 @@ export default function TechnicalConnect() {
     const initialY = isMobile ? 0 : 200;
     return (
 
-        <motion.div 
-        className=' flex flex-col justify-center items-center gap-10'
-        initial={{ opacity: 0, y: initialY }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        >
-
-            
-            <p className=' pr-10 pl-10 text-2xl sm:text-4xl  text-center font-bold text-HoverBlue'>The technical resources you need to advance</p>
-
-            <div className=' flex flex-col sm:flex-row  p-10 gap-15 '>
-                    <div>
-                        <ZoomPhotoText
-                            photo={TechnicalResource}
-                            heading2="Continuing education"
-                            text1={`Expert taught programs to help you succeed and excel in
-your career as you fulfill your licensure requirements. Over
-55 years of high-quality programming and certificate
-programs.
-- Unlimited all access pass for on-demand webinars - New!
-- PE civil exam prep
-- Live and on-demand training`}
-
-                        />
-
-                    </div>
-
-                    <div>
-                        <ZoomPhotoText
-                            photo={Laptop}
-                            heading2="Publications"
-                            text1="SHIVMALA Library is your platform for the latest in civil
-                        engineering practice and research. This core collection
-                        covers all technical areas of civil engineering. Shivmala’s
-                        scholarly publications include books, peer-reviewed journals,
-                        conference proceedings, and magazines."
-                            ButtonText="SHIVMALA Library"
-                        />
-                    </div>
-            </div>        
-                
-            <p className='pr-10 pl-10 text-2xl  sm:text-4xl font-bold text-HoverBlue'>New Ways to Connect</p>
-
-            <motion.div 
+        <motion.div
+            className=' flex flex-col justify-center items-center gap-10'
             initial={{ opacity: 0, y: initialY }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className='flex flex-col sm:flex-row p-10 gap-15 '>
+        >
+
+
+            <p className=' pr-10 pl-10 text-2xl sm:text-4xl  text-center font-boldness text-HoverBlue'>The technical resources you need to advance</p>
+
+            <div className=' flex flex-col sm:flex-row  p-10 gap-15 '>
+                <div>
+                    <ZoomPhotoText
+                        photo={TechnicalResource}
+                        heading2="Continuing education"
+                        text1={`At Shivmala, we offer expert-taught programs designed to help you succeed in your civil engineering career. Gain certifications and meet your licensure requirements with our professional development programs. From live webinars to PE civil exam prep, we have it all.`}
+
+                    />
+
+                </div>
+
+                <div>
+                    <ZoomPhotoText
+                        photo={Laptop}
+                        heading2="Publications"
+                        text1="Access cutting-edge civil engineering resources through Shivmala’s library. Our collection includes books, peer-reviewed journals, and conference proceedings, ensuring you have access to the most up-to-date research and trends in the civil engineering world."
+                        ButtonText="SHIVMALA Library"
+                    />
+                </div>
+            </div>
+
+            <p className='pr-10 pl-10 text-2xl  sm:text-4xl font-boldness text-HoverBlue'>New Ways to Connect</p>
+
+            <motion.div
+                initial={{ opacity: 0, y: initialY }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className='flex flex-col sm:flex-row p-10 gap-15 '>
 
                 <div>
                     <ZoomPhotoText
                         photo={ConstructionWorker}
                         heading2="Career Connections"
-                        text1={`Your home for the best jobs available in civil engineering.
-                        Explore your one-stop shop for all things career-related.`}
+                        text1={`Explore job opportunities and connect with top employers in the civil engineering field. Whether you’re looking for a new role or exploring career paths, Shivmala is here to help you find your dream job.`}
                         ButtonText={"Find your Dream Job!"}
                     />
 
@@ -88,7 +77,7 @@ programs.
                         ButtonText={"Join the Conversation"}
                     />
                 </div>
-            </motion.div>    
+            </motion.div>
 
         </motion.div>
     )

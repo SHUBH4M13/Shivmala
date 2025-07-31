@@ -16,8 +16,8 @@ export default function NewsHero({HeroData}) {
       
       {/* Heading Section */}
       <div className="flex flex-col gap-2">
-        <span className="text-xl sm:text-2xl lg:text-3xl uppercase font-medium">News & Media</span>
-        <span className="text-4xl sm:text-5xl lg:text-6xl uppercase font-bold">SHIVMALA Newsroom</span>
+        <span className="text-xl sm:text-2xl lg:text-3xl uppercase font-emphasis">News & Media</span>
+        <span className="text-4xl sm:text-5xl lg:text-6xl uppercase font-boldness">SHIVMALA Newsroom</span>
       </div>
 
       {/* Image + Text Block */}

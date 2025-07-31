@@ -16,19 +16,19 @@ export default function BigHoverBox({ photo, heading1, heading2, heading3 }) {
         {heading1 && (
           <div className="flex items-center gap-3">
             <div className="w-[5px] h-[30px] rounded-xl bg-gradient-to-b from-[#9FD64D] to-[#2297B6]"></div>
-            <p className="uppercase font-semibold text-[14px] sm:text-[15px] group-hover:text-white transition-colors duration-200">
+            <p className="uppercase font-emphasis-heavy text-[14px] sm:text-[15px] group-hover:text-white transition-colors duration-200">
               {heading1}
             </p>
           </div>
         )}
 
 
-        <div className="font-bold text-[20px] sm:text-[24px] group-hover:text-white transition-colors duration-200">
+        <div className="font-boldness text-[20px] sm:text-[24px] group-hover:text-white transition-colors duration-200">
           <p>{heading2}</p>
         </div>
 
         <div>
-          <p className="font-light text-[16px] sm:text-[18px] text-black group-hover:text-white transition-colors duration-200">
+          <p className="font-body text-[16px] sm:text-[18px] text-black group-hover:text-white transition-colors duration-200">
             {heading3}
           </p>
         </div>
