@@ -4,6 +4,7 @@ import CusButton from '../Components/CusButton'
 import ContactHero from "../Components/Contact/ContactHero"
 import Footer from '../Components/Footer'
 import Locations from "../Components/Contact/Locations"
+import MaharastraLoc from '../Components/Contact/MaharastraLoc'
 
 export default function Contactus() {
     return (
@@ -17,6 +18,10 @@ export default function Contactus() {
 
                 <div>
                     <Locations />
+                </div>
+
+                <div>
+                    <MaharastraLoc/>
                 </div>
 
                 <div className=' w-full flex justify-center items-center'>
