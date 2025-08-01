@@ -16,8 +16,8 @@ const ProjectLayout = lazy(() => import("./Pages/ProjectLayout"));
 const Manrekha_Residency = lazy(() => import("./Components/ProjectsSlides/Manrekha_Residency"));
 const DrainageLineSarsa = lazy(() => import("./Components/ProjectsSlides/DrainageLineSarsa"));
 const PoojaHandiBagInterior = lazy(() => import("./Components/ProjectsSlides/PoojaHandiBagInterior"));
-const HousingProjectsPage = lazy(() => import("./Components/ProjectsSlides/HousingProjectsPage"));
-const HotelRestaurantPage = lazy(() => import("./Components/ProjectsSlides/HotelRestaurantPage"));
+const SankrutRestaurant = lazy(() => import("./Components/ProjectsSlides/SankrutRestaurant.jsx"));
+const Bhumkar_Hotel = lazy(() => import("./Components/ProjectsSlides/Bhumkar_Hotel.jsx"));
 const RoadConstructionPage = lazy(() => import("./Components/ProjectsSlides/RoadConstructionPage"));
 const Contactus = lazy(() => import("./Pages/Contactus"));
 const News = lazy(() => import("./Pages/News"));
@@ -54,10 +54,11 @@ const router = createBrowserRouter([
     element: <ProjectLayout />,
     children: [
       { path: "", element: <Projects /> },
-      { path: "Housing", element: <HousingProjectsPage /> },
+      { path: "Housing", element: <Manrekha_Residency /> },
       { path: "DrainageLine", element: <DrainageLineSarsa /> },
       { path: "interior", element: <PoojaHandiBagInterior /> },
-      { path: "Restaurant_Hotel", element: <HotelRestaurantPage /> },
+      { path: "Sankrut_Hotel", element: <SankrutRestaurant /> },
+      { path: "Bhumkar_Hotel", element: <Bhumkar_Hotel /> },
       { path: "roads", element: <RoadConstructionPage /> },
     ]
   },

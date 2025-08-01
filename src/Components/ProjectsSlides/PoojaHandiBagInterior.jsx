@@ -1,25 +1,34 @@
 import React from 'react';
-import ProjectInfo from '../Projects/ProjectInfo'; // adjust path as needed
-import PoojaHandibagInteriorPhoto from '../../assets/ProjectAssets/PoojaHandibagInteriorPhoto.png'; // placeholder photo
-import PoojaHnadibagp2 from '../../assets/ProjectAssets/PoojaHnadibagp2.png'; // placeholder photo
+import ProjectInfo from '../Projects/ProjectInfo';
+import PoojaHandibagInteriorPhoto from '../../assets/ProjectAssets/PoojaHandibagInteriorPhoto.png';
+import PoojaHnadibagp2 from '../../assets/ProjectAssets/PoojaHnadibagp2.png';
 
-PoojaHnadibagp2
 export default function PoojaHandiBagInterior() {
   const boxData = [
     {
-      BoxHeading: 'Crafting Spaces That Reflect Your Lifestyle',
+      BoxHeading: 'Design Intent',
       BoxText:
-        'Bring the Future of Living Spaces to Life in Your Community with the innovation and creativity behind exceptional interior design. Use our curated resources to showcase how smart layouts and modern aesthetics come together to create functional future-ready interiors—starting today.',
+        'The project goal was to turn a standard 2BHK house into a personalized and stylish living space. The interior layout was tailored for comfort, minimalism, and daily utility without compromising aesthetics.',
     },
     {
-      BoxHeading: 'Designing Homes That Endure',
+      BoxHeading: 'Execution Highlights',
       BoxText:
-        'From intelligent space planning and energy-efficient solutions to eco-conscious materials and seamlessly integrated smart technologies, every element is thoughtfully designed for lasting value.',
+        'Included false ceiling with recessed lighting, laminated wardrobes, modular kitchen setup, dining and TV units, textured wall finishes, and efficient space zoning. All work was custom-built using MDF/plywood and branded laminates.',
     },
     {
-      BoxHeading: 'Timeless Interiors',
+      BoxHeading: 'Color & Lighting',
       BoxText:
-        'A seamless blend of advanced engineering and high-quality materials, every interior is thoughtfully designed to reflect our commitment to durability, operational efficiency, and long-term sustainability.',
+        'Neutral tones were used for walls with bold accents in living and bedroom areas. Natural light was maximized with sheer curtains, and ambient LED lighting enhanced the space\'s warmth and coziness.',
+    },
+    {
+      BoxHeading: 'Furniture & Fixtures',
+      BoxText:
+        'Custom wardrobes, folding dining sets, and wall-mounted TV units were integrated. Premium fittings were used in kitchen and bathrooms to match the overall theme of elegance and utility.',
+    },
+    {
+      BoxHeading: 'Client Satisfaction',
+      BoxText:
+        'The house now reflects modern urban taste and lifestyle needs. The client appreciated the timely delivery, material transparency, and ability to visualize the outcome before execution using 3D renders.',
     },
   ];
 

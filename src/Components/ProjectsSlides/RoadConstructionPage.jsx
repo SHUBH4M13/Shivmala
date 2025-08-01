@@ -5,21 +5,24 @@ import Photo2 from "../../assets/ProjectAssets/Photo2.png"
 export default function RoadConstructionPage() {
   const boxData = [
     {
-      BoxHeading: "Building the Roads That Lead to Tomorrow’s Cities",
+      BoxHeading: "Technical Specs",
       BoxText:
-        "Craft the roads of the future with next-gen construction and smart infrastructure tools. Explore our curated resources on sustainable transport networks, smart road alignment systems, and student innovation challenges.",
+        "The road was constructed with a thickness of 200 mm M-30 grade concrete over a compacted subgrade and subbase layer. Curbstones were placed on both sides with a side slope to direct rainwater into side drains.",
     },
     {
-      BoxHeading: "Next-Gen Infrastructure: Smarter Roads for Connected Cities",
+      BoxHeading: "Execution Process",
       BoxText:
-        "Our dynamic infrastructure is driven by intelligent tools, smart urban layouts, and seamless mobility innovations. From shared transport to multi-use green corridors, rethink the way we connect and travel — long into the future.",
+        "The entire roadbed was surveyed, leveled, and compacted using vibratory rollers. Concrete was poured using transit mixers and vibrated mechanically to ensure uniform compaction and strength.",
     },
     {
-      BoxHeading: "Through the Wonder of Roadway Design",
+      BoxHeading: "Drainage & Finishing",
       BoxText:
-        "Embrace the strength of modern engineering, smart materials, and elegant execution. Every element reflects performance, resilience, and safety in our vision for tomorrow’s roads and highway infrastructure.",
+        "Side drains were constructed with proper slope and gradient to ensure effective water runoff. The road edges were sealed and expansion joints added to enhance durability and prevent cracking.",
     },
   ];
+
+  const projectdesc = `The 2 km RCC road construction project at Sarsa village improved rural connectivity by offering a robust and
+  weather-resistant cement concrete surface with side drainage and curbstone alignment.`
 
   return (
     <ProjectInfo
@@ -27,6 +30,7 @@ export default function RoadConstructionPage() {
       projectphoto1={Photo2}
       ProjectSubHeading="Move"
       boxData={boxData}
+      projectdesc ={projectdesc}
     />
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import ProjectsHero from '../Components/Projects/ProjectsHero';
 import ProjectCard from '../Components/Projects/ProjectCard';
 import { motion } from 'motion/react';
@@ -21,7 +20,7 @@ export default function Projects() {
     <div>      
       <ProjectsHero />
 
-      <> {/* lisitng the projects done*/}
+      <> 
         {projectData.map((project, index) => (
           <motion.div
             key={index}

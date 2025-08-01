@@ -20,7 +20,6 @@ export default function ProjectInfo({
 
   return (
     <div className="w-full px-4 sm:px-6 lg:px-16 py-10 space-y-10">
-      {/* Back Button */}
       <div>
         <button
           onClick={() => navigate("/projects")}
@@ -31,11 +30,14 @@ export default function ProjectInfo({
         </button>
       </div>
 
-      {/* Heading */}
       <div>
         <h1 className="text-3xl sm:text-4xl text-center font-boldness text-gray-900">
           {InfoHeading}
         </h1>
+        <div>
+          <p className="font-boldness text-lg sm:text-xl mb-2 text-gray-900">{ProjectDesc}</p>
+        </div>
+        
       </div>
 
       <div className="w-full flex flex-col md:flex-row justify-center gap-4">
@@ -53,10 +55,6 @@ export default function ProjectInfo({
         )}
       </div>
 
-
-
-
-      {/* Subheading */}
       <div>
         <h2 className="text-center text-2xl sm:text-3xl font-boldness text-blue-800">
           {ProjectSubHeading}

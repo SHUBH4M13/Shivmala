@@ -9,8 +9,7 @@ const projectData = [
     {
       heading1: "Now all over India",
       heading2: "Housing Projects",
-      text1:
-        "Delivering exceptional housing solutions that combine innovative design with superior craftsmanship. We build vibrant communities and homes that offer comfort, style, and lasting value tailored to your lifestyle and budget.",
+      text1: "Complete RCC Building Construction (G+3) including plastering, electrical fittings, and interior finishing. Delivered with strict adherence to quality and timelines, enhancing urban living standards in Latur.",
       ButtonText: "Learn more",
       Photo: Photo1,
       PhotoLoc: "MANREKHA RESIDENCY, LATUR",
@@ -20,18 +19,18 @@ const projectData = [
     {
       heading2: "Construction",
       text1:
-        "We provide reliable drainage line installation and repair to ensure smooth water flow and prevent blockages. Our work supports strong foundations and long-term structural safety.",
+        "10 km underground drainage network including chambers and slope alignment. Designed for efficient water management and long-term durability in the region",
       ButtonText: "Learn more",
       Photo: Photo8,
       PhotoLoc: "DRAINAGE LINE – SARSA",
-      PhotoDuration: "Jan 2023 – Feb 2023",
+      PhotoDuration: "Jan 2023 - Feb 2023",
       direction: "reverse",
       onClickRoute:"/projects/DrainageLine"
     },
     {
       heading2: "Interior Designing",
       text1:
-        "We craft stunning, functional interiors tailored to your unique style and requirements. From initial concept to the final execution, our designers shape every space with comfort, elegance, and a personal touch.",
+        "Complete 2BHK residential interior design with modular furniture, POP design, and false ceiling. Customized aesthetics and utility for modern home living.",
       ButtonText: "Read the report",
       Photo: Photo3,
       PhotoLoc: "POOJA HANDIBAG HOUSE — INTERIOR",
@@ -41,33 +40,46 @@ const projectData = [
     {
       heading2: "Dream Home Construction",
       text1:
-        "We turn your vision into reality by building custom homes with quality, care, and craftsmanship. From design to finish, we create spaces that reflect your lifestyle and dreams.",
+        "Civil and architectural works with emphasis on space utilization and modern design standards for a premium urban lifestyle.",
       ButtonText: "Learn more",
       Photo: Photo4,
       PhotoLoc: "PATEL PROJECT PUNE",
+      PhotoDuration: "Duration: Ongoing",
       direction: "reverse",
       onClickRoute:"/projects/Housing"
     },
     {
-      heading2: "Hotel & Restaurant",
+      heading2: "Bhumkar Hotel",
       text1:
-        "We build functional, stylish restaurants with attention to detail. From kitchens to dining areas, our team ensures quality, timely delivery, and spaces designed to enhance the dining experience.",
+        "Designed and executed interior and civil works for Bhumkar Hotel. Focused on space optimization, elegant finishes, and durable structures suitable for hospitality environments.",
       ButtonText: "Read the report",
       Photo: Photo5,
       PhotoLoc: "Hotel & Restaurant",
-      onClickRoute:"/projects/Restaurant_Hotel",
+      PhotoDuration: "Duration: Completed",
+      onClickRoute:"/projects/Bhumkar_Hotel",
+    },
+    {
+      heading2: "Sankrut Family Restaurant",
+      text1:
+        "Full construction and interior execution of a family dining restaurant. Built to deliver warm ambiance, functional kitchen layouts, and superior guest experience.",
+      ButtonText: "Read the report",
+      Photo: Photo5,
+      PhotoLoc: "Hotel & Restaurant",
+      PhotoDuration: "Duration: Completed",
+      direction: "reverse",
+      onClickRoute:"/projects/Sankrut_Hotel",
     },
     {
       heading2: "Road Construction",
       text1:
-        "We build strong, durable cement roads using quality engineering and expert techniques. Our focus is on long-lasting performance, smooth finishes, and timely project delivery.",
+        "2 km long RCC road construction with side drains, curbstone alignment, and compaction. Built to withstand high traffic and promote smooth transportation in Sarsa village.",
       ButtonText: "Learn more",
       Photo: Photo2,
       PhotoLoc: "CONCRETE ROAD – SARSA",
-      PhotoDuration: "Duration: Feb 2023 – Mar 2023",
-      direction: "reverse",
+      PhotoDuration: "Duration: Feb 2023 - Mar 2023",
       onClickRoute:"/projects/roads"
     },
   ];
+
 
   export default projectData;

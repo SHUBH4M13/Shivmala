@@ -1,24 +1,28 @@
-
 import React from 'react';
 import ProjectInfo from '../Projects/ProjectInfo';
-import DrainageLinePhoto from "../../assets/ProjectAssets/DrainageLinePhoto.png"
+import DrainageLinePhoto from "../../assets/ProjectAssets/DrainageLinePhoto.png";
 
 export default function DrainageLineSarsa() {
   const boxData = [
     {
-      BoxHeading: 'Bring the Future of Urban',
+      BoxHeading: 'Engineering Specifications',
       BoxText:
-        'Infrastructure to Your Community with the innovations behind modern drainage solutions. Use our curated resources to showcase how smart planning, sustainability, and advanced engineering come together to build resilient and efficient drainage systems — shaping healthier, future-ready cities starting today.',
+        'The system included manholes, inspection chambers, RCC pipes of various diameters, and reinforced concrete linings. The pipeline layout was designed to accommodate peak flow capacity and ensure low maintenance.',
     },
     {
-      BoxHeading: '"Smart, Sustainable Living"',
+      BoxHeading: 'Implementation',
       BoxText:
-        'From intelligent space planning and energy-efficient systems to eco-friendly construction materials and integrated smart technologies, every element is designed with long-term value in mind. These innovations not only elevate the living experience',
+        'Excavation and trenching were done using hydraulic equipment with minimal disruption to daily life. Each segment was tested for leakage and slope accuracy before backfilling and compacting. Safety barriers and signage were maintained throughout.',
     },
     {
-      BoxHeading: 'Smart Urban Planning',
+      BoxHeading: 'Environmental & Compliance',
       BoxText:
-        'A perfect blend of advanced engineering, high-quality materials. Thoughtfully designed, every drainage line reflects our commitment to durability, efficiency, and long-term sustainability.',
+        'Work was carried out in strict adherence to municipal norms and environmental safeguards. Provisions were made for future connections from new residential zones to avoid re-digging.',
+    },
+    {
+      BoxHeading: 'Outcome',
+      BoxText:
+        'The project resulted in significant improvements in waterlogging prevention, cleanliness, and quality of life for the community, especially during monsoon seasons.',
     },
   ];
 
@@ -26,7 +30,7 @@ export default function DrainageLineSarsa() {
     <ProjectInfo
       InfoHeading="Drainage Line Construction"
       projectphoto1={DrainageLinePhoto}
-      projectphoto2={""}
+      projectphoto2=""
       ProjectSubHeading="Being-Healthier"
       boxData={boxData}
     />
