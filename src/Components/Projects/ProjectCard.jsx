@@ -44,10 +44,10 @@ export default function ProjectCard({
           />
 
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-4 py-4">
-            <p className="text-white font-emphasis-heavy text-[18px] leading-tight">
+            <p className="text-white font-emphasis-heavy text-[18px] leading-tight font-heading">
               {PhotoLoc}
             </p>
-            <p className="text-white font-emphasis text-[16px]">
+            <p className="text-white font-emphasis text-[16px] font-sans">
               {PhotoDuration}
             </p>
           </div>

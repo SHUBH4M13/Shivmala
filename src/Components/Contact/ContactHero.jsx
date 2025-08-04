@@ -27,12 +27,12 @@ export default function ContactHero() {
                 className="flex flex-col-reverse lg:flex-row items-start gap-6 mb-10"
             >
                 <div className="w-full lg:w-1/2">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-boldness-heavy leading-tight tracking-tight">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-boldness-heavy leading-tight tracking-tight font-heading">
                         SHIVMALA has more than <span className="text-black">32 </span>
                         offices across 30+ cities
                     </h1>
 
-                    <p className="mt-6 text-base sm:text-lg max-w-xl text-black">
+                    <p className="mt-6 text-base sm:text-lg max-w-xl text-black font-sans">
                         The SHIVMALA family is a fast-growing, independent construction company operating
                         across urban and rural India. With a strong presence in the building, civil,
                         industrial, and infrastructure sectors, our branch offices ensure seamless project

@@ -15,7 +15,7 @@ export default function NewNotable() {
 
   return (
     <div className='w-full h-fit flex flex-col gap-10 items-center px-4 sm:px-10 py-10 sm:py-20'>
-      <p className='font-boldness text-4xl text-HoverBlue'>New & Notable</p>
+      <p className='font-boldness text-4xl text-HoverBlue font-heading'>New & Notable</p>
 
       <motion.div
         initial={{ opacity: 0, x: initialX }}

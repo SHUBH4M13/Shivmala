@@ -25,7 +25,7 @@ export default function TechnicalConnect() {
         >
 
 
-            <p className=' pr-10 pl-10 text-2xl sm:text-4xl  text-center font-boldness text-HoverBlue'>The technical resources you need to advance</p>
+            <p className=' pr-10 pl-10 text-2xl sm:text-4xl  text-center font-boldness text-HoverBlue font-heading'>The technical resources you need to advance</p>
 
             <div className=' flex flex-col sm:flex-row  p-10 gap-15 '>
                 <div>
@@ -47,7 +47,7 @@ export default function TechnicalConnect() {
                 </div>
             </div>
 
-            <p className='pr-10 pl-10 text-2xl  sm:text-4xl font-boldness text-HoverBlue'>New Ways to Connect</p>
+            <p className='pr-10 pl-10 text-2xl  sm:text-4xl font-boldness text-HoverBlue font-heading'>New Ways to Connect</p>
 
             <motion.div
                 initial={{ opacity: 0, y: initialY }}

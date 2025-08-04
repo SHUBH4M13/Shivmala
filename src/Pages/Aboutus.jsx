@@ -10,8 +10,8 @@ export default function Aboutus() {
             <Navbar />
 
             <div className="text-center">
-                <p className="text-textblue font-boldness text-4xl sm:text-5xl md:text-6xl p-6">About us</p>
-                <p className="px-4 sm:px-16 md:px-32 text-[16px] sm:text-[18px] text-gray-700 leading-relaxed">
+                <p className="text-textblue font-boldness text-4xl sm:text-5xl md:text-6xl p-6 font-heading">About us</p>
+                <p className="px-4 sm:px-16 md:px-32 text-[16px] sm:text-[18px] text-gray-700 leading-relaxed font-sans">
                 Shivmala Infrastructure is a leading provider of innovative engineering and construction solutions. Since our inception, we have focused on building sustainable, robust, and scalable infrastructure solutions that meet the needs of communities and industries. Our expertise spans civil engineering, construction, and technology-driven solutions, making us a trusted partner in the development of critical infrastructure projects.
                 </p>
             </div>
@@ -32,8 +32,8 @@ export default function Aboutus() {
                     {/* Business Motto */}
                     <div className="flex flex-col sm:flex-row gap-6 items-start">
                         <div className="flex-1">
-                            <h2 className="text-2xl sm:text-3xl font-boldness text-textblue mb-3">Business Motto</h2>
-                            <p className="text-base sm:text-lg leading-relaxed">
+                            <h2 className="text-2xl sm:text-3xl font-boldness text-textblue mb-3 font-heading">Business Motto</h2>
+                            <p className="text-base sm:text-lg leading-relaxed font-sans">
                                 To be trusted leaders in civil infrastructure development, delivering innovative and sustainable solutions that shape the future.
                                 To provide quality civil engineering services with integrity, professionalism, and a commitment to excellence.
                             </p>
@@ -43,8 +43,8 @@ export default function Aboutus() {
                     {/* Quality Policy */}
                     <div className="flex flex-col sm:flex-row gap-6 items-start">
                         <div className="flex-1">
-                            <h2 className="text-2xl sm:text-3xl font-boldness text-textblue mb-3">Quality Policy</h2>
-                            <p className="text-base sm:text-lg leading-relaxed">
+                            <h2 className="text-2xl sm:text-3xl font-boldness text-textblue mb-3 font-heading">Quality Policy</h2>
+                            <p className="text-base sm:text-lg leading-relaxed font-sans">
                                 Shivmala Engineers and Consultants is committed to delivering client satisfaction and adhering to global quality standards.
                                 We are certified by TUV Nord for implementing ISO 9001 Quality Management Systems.
                                 We aim for continuous, sustainable, and economical development by minimizing resource waste and optimizing project cycles
@@ -60,8 +60,8 @@ export default function Aboutus() {
 
                 {/* Director's Message */}
                 <div className="max-w-5xl">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-boldness text-textblue mb-6">DIRECTOR'S MESSAGE</h2>
-                    <p className="text-base sm:text-lg leading-relaxed">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-boldness text-textblue mb-6 font-heading">DIRECTOR'S MESSAGE</h2>
+                    <p className="text-base sm:text-lg leading-relaxed font-sans">
                     Mr. Shivaji Marutirao More &amp; Mrs. Ratnamala Shivajirao More , as Directors of Shivmala Infrastructure Pvt.
                         Ltd., have laid a solid foundation not only in concrete but also in values.
                         Our journey from fieldwork to a recognized brand is built on trust, continuous learning, and meaningful relationships.
@@ -71,7 +71,7 @@ export default function Aboutus() {
 
                 {/* Our Team */}
                 <div className="w-full">
-                    <h2 className="text-xl sm:text-2xl md:text-3xl font-boldness text-textblue mb-8">OUR TEAM</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-boldness text-textblue mb-8 font-heading">OUR TEAM</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
                         {[
@@ -90,8 +90,8 @@ export default function Aboutus() {
                                 className=' w-[100px] h-[100px] rounded-full'
                                 src="" alt="" />
 
-                                <p className="font-emphasis-heavy text-black mb-2">{member.role}</p>
-                                <p className="text-gray-700">{member.name}</p>
+                                <p className="font-emphasis-heavy text-black mb-2 font-heading">{member.role}</p>
+                                <p className="text-gray-700 font-sans">{member.name}</p>
                             </div>
                         ))}
                     </div>

@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between w-full gap-12">
 
                 {/* Navigation Lists */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-12 w-full md:w-1/2">
+                <div className="flex  font-heading flex-col sm:flex-row items-start sm:items-center justify-center gap-12 w-full md:w-1/2">
                     <ul className="font-emphasis-heavy space-y-3 text-left">
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Home</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/aboutus") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">About us</li>
@@ -51,7 +51,7 @@ export default function Footer() {
                 <div className="flex flex-col justify-between w-full md:w-1/2 gap-6">
 
          
-                    <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 text-sm text-gray-700">
+                    <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 text-sm text-gray-700 font-sans">
                         <p className="hover:text-primaryblue cursor-pointer">+91 8421217140</p>
                         <div className="hidden sm:block w-[1.5px] h-[24px] bg-gray-300" />
                         <p className="hover:text-primaryblue cursor-pointer">Info@shivmalainfra.com</p>
@@ -81,8 +81,8 @@ export default function Footer() {
                
                     <div className="flex flex-col gap-4 pt-2">
                         <div className="w-full h-[1px] bg-gray-300"></div>
-                        <p className="text-sm text-gray-600">© 2025 Shivmala</p>
-                        <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
+                        <p className="text-sm text-gray-600 font-sans">© 2025 Shivmala</p>
+                        <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 font-sans">
                             <p onClick={() => navigate("/legal/CodeofConduct")} className="hover:text-primaryblue cursor-pointer">Code of Conduct</p>
                             <div className="w-[1.5px] h-[20px] bg-gray-300" />
                             <p onClick={() => navigate("/legal/privacy")} className="hover:text-primaryblue cursor-pointer">Privacy</p>

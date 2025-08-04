@@ -4,7 +4,7 @@ export default function NewsMedia({ MediaData }) {
     return (
         <div className='px-6 sm:px-10 lg:px-20 py-10 flex flex-col'>
 
-            <span className=' text-3xl font-boldness mb-5'>
+            <span className=' text-3xl font-boldness mb-5 font-heading'>
                 In the Media
             </span>
 
@@ -26,12 +26,12 @@ export default function NewsMedia({ MediaData }) {
 function Headline({ title, date }) {
     return (
         <div>
-            <span className={`font-emphasis-heavy hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug text-lg`}>
+            <span className={`font-emphasis-heavy hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug text-lg font-heading`}>
                 {title}
             </span>
 
             {/* Date Info */}
-            <div className="text-sm sm:text-[15px] flex gap-5 text-gray-600 flex-wrap">
+            <div className="text-sm sm:text-[15px] flex gap-5 text-gray-600 flex-wrap font-sans">
                 <span>News Release</span>
                 <span>|</span>
                 <span>{date}</span>

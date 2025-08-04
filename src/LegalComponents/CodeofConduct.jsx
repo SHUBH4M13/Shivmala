@@ -5,26 +5,26 @@ export default function CodeofConduct() {
   return (
     <div className='flex flex-col gap-5 mb-10 '>
 
-              <div className='font-boldness-heavy text-3xl text-center'>
+              <div className='font-boldness-heavy text-3xl text-center font-heading'>
         <p>Code of Conduct</p>
       </div>
 
       <div className='flex flex-col items-center'>
         <div className='flex gap-4'>
           <House />
-          <p className="font-emphasis-heavy">Shivmala Home</p>
+          <p className="font-emphasis-heavy font-heading">Shivmala Home</p>
         </div>
 
         <div className="w-full max-w-5xl mx-auto px-4 mt-5">
-          <p className="whitespace-normal text-center font-boldness text-xl text-balance leading-relaxed text-gray-800">
+          <p className="whitespace-normal text-center font-boldness text-xl text-balance leading-relaxed text-gray-800 font-sans">
             The American Society of Civil Engineers (SHIVMALA) offers a variety of meetings, events, and activities that provide opportunities to learn, grow professionally, and exchange ideas; and, where all participants can participate fully in an atmosphere that is free of harassment and discrimination based on any identity-based factors.
           </p>
         </div>
       </div>
 
-      <div className="w-full max-w-5xl mx-auto px-4 mt-8 space-y-4 text-gray-900 text-[17px] leading-relaxed">
+      <div className="w-full max-w-5xl mx-auto px-4 mt-8 space-y-4 text-gray-900 text-[17px] leading-relaxed font-sans">
 
-        <p className='text-left text-xl font-emphasis-heavy'>
+        <p className='text-left text-xl font-emphasis-heavy font-heading'>
           At all SHIVMALA events, we are committed to:
         </p>
 

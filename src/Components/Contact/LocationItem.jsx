@@ -9,9 +9,9 @@ const LocationItem = ({ location, isOpen, onClick }) => (
             onClick={onClick}
         >
             <div className='flex gap-6 items-center'>
-                <span className='text-xl font-medium hover:text-HoverBlue'>{location.City}</span>
+                <span className='text-xl font-medium hover:text-HoverBlue font-heading'>{location.City}</span>
                 <div className='rounded-xl bg-amber-400/50 p-2'>
-                    <p className='font-bold text-sm'>{location.OfficeType}</p>
+                    <p className='font-bold text-sm font-sans'>{location.OfficeType}</p>
                 </div>
             </div>
             <ChevronDown
@@ -21,7 +21,7 @@ const LocationItem = ({ location, isOpen, onClick }) => (
         {isOpen && (
             <div className='mt-4 p-4 bg-gray-100 rounded-lg'>
                 <p>{location.Address}</p>
-                <p className='mt-2 text-sm text-gray-600'>{location.Highlight}</p>
+                <p className='mt-2 text-sm text-gray-600 font-sans'>{location.Highlight}</p>
             </div>
         )}
     </div>

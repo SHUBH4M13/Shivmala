@@ -8,11 +8,11 @@ export default function ServiceText({ ServiceHeading, ServiceDesc, Side = "start
             <div className='w-[40px] bg-black h-[1px]'></div>
 
             <div className='font-boldness text-4xl sm:text-5xl leading-snug'>
-                <p>{ServiceHeading}</p>
+                <p className="font-heading">{ServiceHeading}</p>
             </div>
 
             <div className='text-base sm:text-lg text-gray-700 max-w-xl'>
-                <p>{ServiceDesc}</p>
+                <p className="font-sans">{ServiceDesc}</p>
             </div>
         </div>
     )

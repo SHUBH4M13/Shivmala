@@ -11,17 +11,17 @@ export default function NewsText({
     <div className={`w-full flex flex-col ${gap} text-black`}>
 
       {/* Category */}
-      <span className="uppercase text-sm sm:text-[15px] text-gray-600 tracking-wider">
+      <span className="uppercase text-sm sm:text-[15px] text-gray-600 tracking-wider font-sans">
         {category}
       </span>
 
       {/* Title */}
-              <span className={`font-emphasis-heavy hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug ${titleSize}`}>
+              <span className={`font-emphasis-heavy hover:text-green-800 cursor-pointer hover:underline transition duration-150 leading-snug ${titleSize} font-heading`}>
         {title}
       </span>
 
       {/* Date Info */}
-      <div className="text-sm sm:text-[15px] flex gap-2 text-gray-600 flex-wrap">
+      <div className="text-sm sm:text-[15px] flex gap-2 text-gray-600 flex-wrap font-sans">
         <span>News Release</span>
         <span>|</span>
         <span>{date}</span>

@@ -8,15 +8,15 @@ export default function PartnershipSection() {
 
                 {/* Left Section */}
                 <div className="w-full lg:w-1/3 space-y-2">
-                    <h2 className="text-2xl lg:sticky top-0 sm:text-3xl font-boldness">Partnership for a New Era</h2>
-                    <p className="text-sm text-gray-600 font-emphasis-heavy">Read the announcements</p>
+                    <h2 className="text-2xl lg:sticky top-0 sm:text-3xl font-boldness font-heading">Partnership for a New Era</h2>
+                    <p className="text-sm text-gray-600 font-emphasis-heavy font-sans">Read the announcements</p>
                 </div>
 
                 {/* Right Section */}
                 <div className="w-full lg:w-2/3 space-y-6">
                     <div>
-                        <h3 className="text-2xl sm:text-3xl font-boldness">TEEGAAT</h3>
-                        <p className="text-gray-700 mt-3 text-[15px] sm:text-base leading-relaxed">
+                        <h3 className="text-2xl sm:text-3xl font-boldness font-heading">TEEGAAT</h3>
+                        <p className="text-gray-700 mt-3 text-[15px] sm:text-base leading-relaxed font-sans">
                             Shivmala Infrastructure is shaping India’s future with forward-thinking construction solutions that uplift both urban and rural environments. Our strategic alliances with public and private entities help overcome infrastructure challenges through innovation, quality, and smart engineering.
                         </p>
                     </div>
@@ -56,8 +56,8 @@ function FeatureCard({ icon, title, desc }) {
         <div className="flex items-start gap-4">
             <div className="text-black mt-1">{icon}</div>
             <div>
-                <h4 className="font-emphasis-heavy text-lg mb-1">{title}</h4>
-                <p className="text-sm text-gray-700 leading-relaxed">{desc}</p>
+                <h4 className="font-emphasis-heavy text-lg mb-1 font-heading">{title}</h4>
+                <p className="text-sm text-gray-700 leading-relaxed font-sans">{desc}</p>
             </div>
         </div>
     );

@@ -6,17 +6,17 @@ export default function JobDetail() {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-700 to-blue-500 text-white">
       {/* Top Header */}
       <div className="px-4 sm:px-10 pt-10 pb-6 text-center">
-        <h2 className="text-2xl sm:text-3xl font-emphasis-heavy">Shivmala Engineers & Consultant</h2>
-        <h1 className="text-3xl sm:text-4xl font-boldness mt-2">E3D/ SP3D Instrumentation Designer</h1>
+        <h2 className="text-2xl sm:text-3xl font-emphasis-heavy font-heading">Shivmala Engineers & Consultant</h2>
+        <h1 className="text-3xl sm:text-4xl font-boldness mt-2 font-heading">E3D/ SP3D Instrumentation Designer</h1>
 
         <div className="flex flex-wrap justify-center gap-6 mt-4 text-white/90">
           <div className="flex items-center gap-2">
             <MapPin size={20} />
-            <span className="uppercase text-sm">Mumbai</span>
+            <span className="uppercase text-sm font-sans">Mumbai</span>
           </div>
           <div className="flex items-center gap-2">
             <BriefcaseBusiness size={20} />
-            <span className="uppercase text-sm">2+ Years</span>
+            <span className="uppercase text-sm font-sans">2+ Years</span>
           </div>
         </div>
       </div>
@@ -26,19 +26,19 @@ export default function JobDetail() {
         {/* Experience & Education */}
         <div className="grid sm:grid-cols-2 gap-6 border border-blue-300 p-6 rounded-xl">
           <div>
-            <p className="font-boldness uppercase text-sm mb-1">Experience Required</p>
-            <p className="text-gray-700 text-sm">2+ Years</p>
+            <p className="font-boldness uppercase text-sm mb-1 font-heading">Experience Required</p>
+            <p className="text-gray-700 text-sm font-sans">2+ Years</p>
           </div>
           <div>
-            <p className="font-boldness uppercase text-sm mb-1">Educational Background</p>
-            <p className="text-gray-700 text-sm">BE / BTECH / MTECH (ELECTRICAL ENGG)</p>
+            <p className="font-boldness uppercase text-sm mb-1 font-heading">Educational Background</p>
+            <p className="text-gray-700 text-sm font-sans">BE / BTECH / MTECH (ELECTRICAL ENGG)</p>
           </div>
         </div>
 
         {/* Job Description */}
         <div className="mt-8">
-          <h3 className="font-boldness text-lg mb-3">Job Description</h3>
-          <div className="text-sm text-gray-700 space-y-1 leading-relaxed">
+          <h3 className="font-boldness text-lg mb-3 font-heading">Job Description</h3>
+          <div className="text-sm text-gray-700 space-y-1 leading-relaxed font-sans">
             <p>Instrumentation (Sr Modlers)</p>
             <p>Key Skills If Any</p>
             <ul className="list-decimal list-inside pl-4">

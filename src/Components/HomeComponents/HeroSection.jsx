@@ -21,10 +21,10 @@ export default function HeroSection() {
           viewport={{ once: true }}
         >
           <div className="flex flex-col">
-                            <p className="font-boldness-heavy text-4xl sm:text-5xl leading-tight">
+              <p className="font-boldness-heavy font-heading  text-4xl sm:text-5xl leading-tight">
               Infrastructure Leaders Building Communities
             </p>
-            <p className="pt-5 text-base sm:text-lg">
+            <p className="pt-5 text-base font-sans sm:text-lg">
               Tough problems require innovative solutions. At Shivmala, we engineer tomorrow’s infrastructure today. Join us as we move forward faster, redefining the infrastructure landscape            </p>
           </div>
 

@@ -6,26 +6,26 @@ export default function JobCard({ jobheading, joblocation, jobExperiece, jobdesc
   return (
     <div className='flex flex-col p-6 sm:p-8 lg:p-10 border-[#0e0e0f38] border rounded-2xl hover:shadow-md hover:-translate-y-1 duration-200 transition-transform w-full max-w-xl shadow-black/20 bg-white'>
 
-              <p className='text-xl sm:text-2xl text-[#1F2937] font-emphasis-heavy'>{jobheading || "E3D/ SP3D Instrumentation Designer"}</p>
+              <p className='text-xl sm:text-2xl text-[#1F2937] font-emphasis-heavy font-heading'>{jobheading || "E3D/ SP3D Instrumentation Designer"}</p>
 
       <div className='flex flex-wrap gap-x-6 gap-y-2 pt-4'>
         <div className='flex items-center gap-1'>
           <MapPin size={20} className='text-[#4B5563]' />
-          <p className='uppercase text-[#4B5563] text-sm'>{joblocation || "Mumbai"}</p>
+          <p className='uppercase text-[#4B5563] text-sm font-sans'>{joblocation || "Mumbai"}</p>
         </div>
 
         <div className='flex items-center gap-1'>
           <BriefcaseBusiness size={20} className='text-[#4B5563]' />
-          <p className='uppercase text-[#4B5563] text-sm'>{jobExperiece || "2+ years"}</p>
+          <p className='uppercase text-[#4B5563] text-sm font-sans'>{jobExperiece || "2+ years"}</p>
         </div>
       </div>
 
-      <p className='pt-4 text-[#4B5563] text-sm sm:text-base leading-relaxed'>
+      <p className='pt-4 text-[#4B5563] text-sm sm:text-base leading-relaxed font-sans'>
         {jobdesc || "Instrumentation (Sr Modlers) Key Skills If Any 1.SP3D / E-3D 2. Smart Sketch & Dialux 3.Adnoc Modeling Procedure &…"}
       </p>
 
       <div className='pt-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3'>
-        <p className='text-[#4B5563] text-sm'>{jobposted || "Posted 2 weeks ago"}</p>
+        <p className='text-[#4B5563] text-sm font-sans'>{jobposted || "Posted 2 weeks ago"}</p>
         <CusButton text={"View Details"} onClick={onClick} />
       </div>
 

@@ -24,7 +24,7 @@ export default function Contactus() {
                     <MaharastraLoc/>
                 </div>
 
-                <div className=' w-full flex justify-center items-center'>
+                <div className=' w-full flex justify-center items-center mb-15'>
                     <CusButton
                         text={"Get In Touch"}
                     />

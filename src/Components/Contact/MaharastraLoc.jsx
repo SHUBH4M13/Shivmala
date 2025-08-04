@@ -44,9 +44,9 @@ export default function MaharastraLoc() {
                             onClick={() => toggleOpen(index)}
                         >
                             <div className='flex items-center gap-4 sm:gap-6'>
-                                <span className='text-lg sm:text-xl font-medium hover:text-HoverBlue'>{location.City}</span>
+                                <span className='text-lg sm:text-xl font-medium hover:text-HoverBlue font-heading'>{location.City}</span>
                                 <div className='rounded-xl bg-amber-400/50 p-1 sm:p-2'>
-                                    <p className='font-bold text-xs sm:text-sm'>{location.OfficeType}</p>
+                                    <p className='font-bold text-xs sm:text-sm font-sans'>{location.OfficeType}</p>
                                 </div>
                             </div>
                             <ChevronDown
@@ -58,8 +58,8 @@ export default function MaharastraLoc() {
 
                         {openIndex === index && (
                             <div className='mt-4 p-4 bg-gray-100 rounded-lg animate-fade-in'>
-                                <p className='text-sm sm:text-base'>{location.Address}</p>
-                                <p className='mt-2 text-xs sm:text-sm text-gray-600'>{location.Highlight}</p>
+                                <p className='text-sm sm:text-base font-sans'>{location.Address}</p>
+                                <p className='mt-2 text-xs sm:text-sm text-gray-600 font-sans'>{location.Highlight}</p>
                             </div>
                         )}
                     </div>

@@ -12,19 +12,19 @@ export default function ImpactPatners() {
       <div className="flex flex-col lg:flex-row justify-between gap-10">
 
         <div className="w-full  lg:w-1/3 flex flex-col gap-2">
-          <h2 className="text-2xl lg:sticky top-0  sm:text-4xl font-boldness leading-tight">Partners in Impact</h2>
-          <p className="text-sm text-gray-600">learn more abt our investors</p>
+          <h2 className="text-2xl lg:sticky top-0  sm:text-4xl font-boldness leading-tight font-heading">Partners in Impact</h2>
+          <p className="text-sm text-gray-600 font-sans">learn more abt our investors</p>
         </div>
 
         {/* Right Side Content */}
         <div className="w-full lg:w-2/3 flex flex-col gap-6">
-          <h3 className="text-xl sm:text-2xl font-emphasis-heavy leading-snug">
+          <h3 className="text-xl sm:text-2xl font-emphasis-heavy leading-snug font-heading">
             Shivmala empowers development through strong partnerships
             We collaborate with leading investors, developers, and institutions to build future-ready infrastructure across Maharashtra. By aligning with visionaries in public and private sectors, Shivmala delivers impactful, scalable, and sustainable civil projects that transform communities.
 
           </h3>
 
-          <p className="text-gray-700 text-[15px] sm:text-base leading-relaxed">
+          <p className="text-gray-700 text-[15px] sm:text-base leading-relaxed font-sans">
             Our stakeholders include top financial and development partners who trust our vision of quality-driven infrastructure.
             <br />
             <strong>Our valued collaborators include:
@@ -38,7 +38,7 @@ export default function ImpactPatners() {
                 key={index}
                 className="w-full h-[60px] flex text-center items-center justify-center border border-gray-200 rounded-md bg-white shadow-sm hover:shadow-md transition"
               >
-                <span className="text-sm text-gray-500">{name}</span>
+                <span className="text-sm text-gray-500 font-sans">{name}</span>
               </div>
             ))}
           </div>
