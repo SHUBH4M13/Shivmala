@@ -4,10 +4,11 @@ import ConstrcutionVideo from "../../assets/ConstrcutionVideo.mp4"
 import { motion } from "motion/react"
 import { useMediaQuery } from "react-responsive";
 import ShivmalaLogo from "../../assets/ShivmalaLogo.png"
+import { useNavigate } from 'react-router';
 
 export default function HeroSection() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-
+  const navigate = useNavigate();
   const initialX = isMobile ? 0 : -200;
   return (
     <div className="flex flex-col-reverse md:flex-row items-center w-full">
@@ -28,7 +29,9 @@ export default function HeroSection() {
           </div>
 
           <div className=" flex justify-center items-center sm:justify-normal pt-8">
-            <CusButton text="Join Now" wid='200px' />
+            <CusButton
+            onClick={ () => navigate("/contactus")}
+            text="Join Now" wid='200px' />
           </div>
         </motion.div>
       </div>

@@ -1,16 +1,16 @@
 import React from 'react'
 import ZoomPhotoText from '../ZoomPhotoText'
-import TechnicalResource from "../../assets/TechnicalResource.jpg"
+import TechnicalResource from "../../assets/TechnicalResource.webp"
 import Laptop from "../../assets/Laptop.jpg"
 import ConstructionWorker from "../../assets/ConstructionWorker.jpg"
 import Laptopguy from "../../assets/Laptopguy.jpg"
 import { motion } from "motion/react";
 import { useMediaQuery } from 'react-responsive'
-
+import { useNavigate } from 'react-router'
 
 export default function TechnicalConnect() {
     const isMobile = useMediaQuery({ maxWidth: 768 });
-
+    const navigate = useNavigate();
     const initialMinusX = isMobile ? 0 : -200;
     const initialX = isMobile ? 0 : 200;
     const initialY = isMobile ? 0 : 200;
@@ -31,8 +31,8 @@ export default function TechnicalConnect() {
                 <div>
                     <ZoomPhotoText
                         photo={TechnicalResource}
-                        heading2="Continuing education"
-                        text1={`At Shivmala, we offer expert-taught programs designed to help you succeed in your civil engineering career. Gain certifications and meet your licensure requirements with our professional development programs. From live webinars to PE civil exam prep, we have it all.`}
+                        heading2="Infrastructure & Commercial Solutions"
+                        text1={`Shivmala Infrastructure Pvt. Ltd. provides end-to-end construction services for commercial, residential, and institutional projects. We focus on timely execution, cost-efficiency, and structural quality. Our expertise includes commercial buildings, retail spaces, highways, and architectural design with practical, Vastu-compliant layouts tailored to modern needs.`}
 
                     />
 
@@ -41,9 +41,8 @@ export default function TechnicalConnect() {
                 <div>
                     <ZoomPhotoText
                         photo={Laptop}
-                        heading2="Publications"
-                        text1="Access cutting-edge civil engineering resources through Shivmala’s library. Our collection includes books, peer-reviewed journals, and conference proceedings, ensuring you have access to the most up-to-date research and trends in the civil engineering world."
-                        ButtonText="SHIVMALA Library"
+                        heading2="Specialized Civil Engineering Services"
+                        text1="We offer specialized solutions like interior design, drainage systems, and bridge or culvert construction. Our designs balance style with functionality, while our infrastructure projects ensure durability, safety, and compliance. These services support efficient, future-ready development across residential and industrial spaces."
                     />
                 </div>
             </div>
@@ -63,6 +62,7 @@ export default function TechnicalConnect() {
                         heading2="Career Connections"
                         text1={`Explore job opportunities and connect with top employers in the civil engineering field. Whether you’re looking for a new role or exploring career paths, Shivmala is here to help you find your dream job.`}
                         ButtonText={"Find your Dream Job!"}
+                        onClick={ () => navigate("/career")}
                     />
 
                 </div>
@@ -75,6 +75,7 @@ export default function TechnicalConnect() {
                         bringing unique perspectives from all types of engineers
                         throughout the society."
                         ButtonText={"Join the Conversation"}
+                        onClick={ () => navigate("/contactus")}
                     />
                 </div>
             </motion.div>

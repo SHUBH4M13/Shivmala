@@ -4,10 +4,10 @@ import jumpstartp1 from "../../assets/jumpstartp1.jpg"
 import jumpstartp2 from "../../assets/jumpstartp2.jpg"
 import {motion} from "motion/react"
 import { useMediaQuery } from 'react-responsive'
-
+import { useNavigate } from 'react-router'
 export default function Jumpstart() {
     const isMobile = useMediaQuery({ maxWidth: 768 });
-
+    const navigate = useNavigate();
     const initialX = isMobile ? 0 : -200;
     const initialY = isMobile ? 0 : 200;
 
@@ -28,6 +28,7 @@ export default function Jumpstart() {
                     heading2={"SHIVMALA on Campus"}
                     text1="Join the Shivmala community while in college and make a real difference in the civil engineering profession. Our campus program offers mentorship, career networking opportunities, and access to educational resources – all for free!"
                     ButtonText={"Learn more"}
+                    onClick={ () => navigate("/career")}
                 />
             </div>
 
