@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BigHoverBox({ photo, heading1, heading2, heading3 }) {
   return (
-    <div className="shadow-xl hover:shadow-black/50 w-[300px] sm:w-[450px] lg:w-[842px] h-auto sm:h-[330px] group hover:bg-HoverBlue duration-200 rounded-xl flex flex-col sm:flex-row overflow-hidden bg-white mx-auto">
+    <div className="w-full xl:max-w-[842px] h-auto sm:h-[330px] group hover:bg-HoverBlue duration-200 rounded-xl flex flex-col sm:flex-row overflow-hidden bg-white shadow-xl hover:shadow-black/50 mx-auto">
 
       <div className="w-full sm:w-1/2 h-[200px] sm:h-full">
         <img

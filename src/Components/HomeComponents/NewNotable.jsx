@@ -7,6 +7,7 @@ import Photo2 from "../../assets/Photo2.webp";
 import Photo3 from "../../assets/Photo3.jpg";
 
 export default function NewNotable() {
+
   return (
     <div className='w-full h-fit flex flex-col gap-10 items-center px-4 sm:px-10 py-10 sm:py-20'>
       <p className='font-boldness text-4xl text-HoverBlue font-heading'>New & Notable</p>
@@ -16,7 +17,7 @@ export default function NewNotable() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='grid grid-cols-1 lg:grid-cols-2 items-stretch gap-6 w-full'
+        className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'
       >
         <BigHoverBox
           photo={NewNotablep1}
@@ -36,7 +37,7 @@ export default function NewNotable() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 flex-wrap'
+        className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'
       >
         <SmallHoverBox
           heading1="SHIVMALA FOUNDATION"
@@ -56,7 +57,7 @@ export default function NewNotable() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 flex-wrap'
+        className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'
       >
         <BigHoverBox
           photo={Photo3}

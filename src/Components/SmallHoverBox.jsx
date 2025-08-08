@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SmallHoverBox({ heading1, heading2, heading3 }) {
   return (
-    <div className='w-full max-w-[407px] flex font-heading flex-col gap-5 shadow-xl hover:shadow-black/50 hover:bg-HoverBlue hover:text-white duration-200 rounded-xl bg-white p-6 sm:p-10 h-auto sm:h-[333px]'>
+    <div className='w-full xl:max-w-[407px] flex font-heading flex-col gap-5 shadow-xl hover:shadow-black/50 hover:bg-HoverBlue hover:text-white duration-200 rounded-xl bg-white p-6 sm:p-10 h-auto sm:h-[333px]'>
 
       <div className='flex gap-3 items-center'>
         {heading1 && (
@@ -13,7 +13,7 @@ export default function SmallHoverBox({ heading1, heading2, heading3 }) {
         )}
       </div>
 
-              <div className='w-full font-boldness text-[20px] sm:text-[24px] font-heading'>
+      <div className='w-full font-boldness text-[20px] sm:text-[24px] font-heading'>
         <p>{heading2}</p>
       </div>
 
