@@ -10,7 +10,7 @@ import PartnershipSection from '../Components/Investors/PartnershipSection'
 
 export default function Investors() {
   return (
-    <div>
+    <div className=' overflow-x-hidden '>
         <Navbar/>
         <Investorshero/>
         <ImpactPatners/>

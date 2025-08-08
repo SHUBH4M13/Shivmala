@@ -6,14 +6,11 @@ import {motion} from "motion/react"
 import { useMediaQuery } from 'react-responsive'
 import { useNavigate } from 'react-router'
 export default function Jumpstart() {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
     const navigate = useNavigate();
-    const initialX = isMobile ? 0 : -200;
-    const initialY = isMobile ? 0 : 200;
 
     return (
         <motion.div
-        initial={{ opacity: 0, y: initialY }}
+        initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}

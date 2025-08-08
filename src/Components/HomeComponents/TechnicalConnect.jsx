@@ -5,20 +5,15 @@ import Laptop from "../../assets/Laptop.jpg"
 import ConstructionWorker from "../../assets/ConstructionWorker.jpg"
 import Laptopguy from "../../assets/Laptopguy.jpg"
 import { motion } from "motion/react";
-import { useMediaQuery } from 'react-responsive'
 import { useNavigate } from 'react-router'
 
 export default function TechnicalConnect() {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
     const navigate = useNavigate();
-    const initialMinusX = isMobile ? 0 : -200;
-    const initialX = isMobile ? 0 : 200;
-    const initialY = isMobile ? 0 : 200;
-    return (
 
+    return (
         <motion.div
             className=' flex flex-col justify-center items-center gap-10'
-            initial={{ opacity: 0, y: initialY }}
+            initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
@@ -50,7 +45,7 @@ export default function TechnicalConnect() {
             <p className='pr-10 pl-10 text-2xl  sm:text-4xl font-boldness text-HoverBlue font-heading'>New Ways to Connect</p>
 
             <motion.div
-                initial={{ opacity: 0, y: initialY }}
+                initial={{ opacity: 0, y: 200 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
@@ -63,6 +58,7 @@ export default function TechnicalConnect() {
                         text1={`Explore job opportunities and connect with top employers in the civil engineering field. Whether you’re looking for a new role or exploring career paths, Shivmala is here to help you find your dream job.`}
                         ButtonText={"Find your Dream Job!"}
                         onClick={ () => navigate("/career")}
+                        wid={160}
                     />
 
                 </div>
@@ -76,6 +72,7 @@ export default function TechnicalConnect() {
                         throughout the society."
                         ButtonText={"Join the Conversation"}
                         onClick={ () => navigate("/contactus")}
+                        wid={160}
                     />
                 </div>
             </motion.div>

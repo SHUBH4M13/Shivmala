@@ -35,7 +35,7 @@ export default function News() {
   const NewsMediaData = newsData.slice(5 , 10)
 
   return (
-    <div>
+    <div className='overflow-x-hidden '>
       <Navbar />
       <NewsHero HeroData={Herodata}/>
       <NewsBento TopStories = {BentoData} />

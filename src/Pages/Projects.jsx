@@ -17,7 +17,7 @@ export default function Projects() {
 
 
   return (
-    <div>      
+    <div className=' overflow-x-hidden '>      
       <ProjectsHero />
 
       <> 

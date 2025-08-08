@@ -5,24 +5,18 @@ import { motion } from "framer-motion";
 import NewNotablep1 from "../../assets/NewNotablep1.jpeg";
 import Photo2 from "../../assets/Photo2.webp";
 import Photo3 from "../../assets/Photo3.jpg";
-import { useMediaQuery } from 'react-responsive';
 
 export default function NewNotable() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
-  const initialMinusX = isMobile ? 0 : -200;
-  const initialX = isMobile ? 0 : 200;
-
   return (
     <div className='w-full h-fit flex flex-col gap-10 items-center px-4 sm:px-10 py-10 sm:py-20'>
       <p className='font-boldness text-4xl text-HoverBlue font-heading'>New & Notable</p>
 
       <motion.div
-        initial={{ opacity: 0, x: initialX }}
+        initial={{ opacity: 0, x: 200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'
+        className='grid grid-cols-1 lg:grid-cols-2 items-stretch gap-6 w-full'
       >
         <BigHoverBox
           photo={NewNotablep1}
@@ -38,11 +32,11 @@ export default function NewNotable() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, x: initialMinusX }}
+        initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'
+        className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 flex-wrap'
       >
         <SmallHoverBox
           heading1="SHIVMALA FOUNDATION"
@@ -58,11 +52,11 @@ export default function NewNotable() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, x: initialX }}
+        initial={{ opacity: 0, x: 200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-col lg:flex-row justify-center items-center gap-6 flex-wrap'
+        className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 flex-wrap'
       >
         <BigHoverBox
           photo={Photo3}

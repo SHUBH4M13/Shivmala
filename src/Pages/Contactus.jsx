@@ -8,7 +8,7 @@ import MaharastraLoc from '../Components/Contact/MaharastraLoc'
 
 export default function Contactus() {
     return (
-        <div>
+        <div className=' overflow-x-hidden '>
             <Navbar />
 
             <div>

@@ -6,7 +6,7 @@ import { Info, Settings } from "lucide-react"
 
 export default function Aboutus() {
     return (
-        <div>
+        <div className=' overflow-x-hidden '>
             <Navbar />
 
             <div className="text-center">

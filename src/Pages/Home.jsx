@@ -13,7 +13,7 @@ const PassionForward = React.lazy(() => import("../Components/HomeComponents/Pas
 
 export default function Home() {
   return (
-    <div className=' flex flex-col gap-5 '>
+    <div className=' flex flex-col gap-5 overflow-x-hidden '>
       <Navbar />
       <HeroSection />
       <Search />

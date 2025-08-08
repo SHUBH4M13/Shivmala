@@ -20,7 +20,7 @@ export default function Navbar() {
 
   const handleToggleMenu = () => SetToggleMenu(prev => !prev);
 
-  const navItemClasses = "text-lg cursor-pointer hover:text-primaryblue duration-200";
+  const navItemClasses = "text-lg cursor-pointer hover:text-primaryblue duration-200 md:text-3xl lg:text-4xl  xl:text-xl ";
 
   return (
     <div className={`w-full ${ToggleMenu ? 'h-full' : 'h-[90px]'} flex justify-between items-center px-6 relative`}>
@@ -34,9 +34,8 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Desktop Nav */}
-      <div className='hidden lg:flex w-2/3 items-center justify-end'>
-        <ul className='flex gap-8 font-emphasis-heavy font-heading'>
+      <div className='hidden xl:flex w-2/3 items-center justify-end'>
+        <ul className='flex gap-8 font-emphasis-heavy font-heading '>
           {routes.map(({ option, path }) => (
             <li
               key={path}
@@ -49,8 +48,9 @@ export default function Navbar() {
         </ul>
       </div>
 
-      <div className='lg:hidden cursor-pointer text-black'>
-        <Menu onClick={handleToggleMenu} size={28} />
+      <div className='xl:hidden cursor-pointer text-black'>
+        <Menu 
+        onClick={handleToggleMenu} size={28} />
       </div>
 
       {ToggleMenu && (
@@ -59,7 +59,7 @@ export default function Navbar() {
             <MoveLeft size={28} />
           </button>
 
-          <ul className='flex flex-col gap-6 text-center font-emphasis-heavy font-heading'>
+          <ul className='flex flex-col gap-8 lg:gap-16 text-center font-emphasis-heavy font-heading'>
             {routes.map(({ option, path }) => (
               <li
                 key={path}

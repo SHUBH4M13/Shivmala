@@ -126,7 +126,7 @@ export default function Careers() {
     <>
       <Navbar />
       {selectedJob ? (
-        <div className="min-h-screen w-full bg-white text-black">
+        <div className="min-h-screen w-full bg-white text-black overflow-x-hidden ">
           <div className="bg-gradient-to-r from-blue-800 to-blue-500 text-white py-12 px-6 sm:px-12 relative">
             <div className="max-w-5xl mx-auto">
               <h3 className="text-lg sm:text-xl mb-2 font-emphasis-heavy font-heading">Shivmala Engineers & Consultant</h3>

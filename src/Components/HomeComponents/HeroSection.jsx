@@ -2,26 +2,24 @@ import React from 'react'
 import CusButton from '../CusButton'
 import ConstrcutionVideo from "../../assets/ConstrcutionVideo.mp4"
 import { motion } from "motion/react"
-import { useMediaQuery } from "react-responsive";
+import { useNavigate } from 'react-router'
 import ShivmalaLogo from "../../assets/ShivmalaLogo.png"
-import { useNavigate } from 'react-router';
 
 export default function HeroSection() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
   const navigate = useNavigate();
-  const initialX = isMobile ? 0 : -200;
+
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center w-full">
+    <div className="flex flex-col-reverse md:flex-row items-center w-full overflow-x-hidden ">
 
       <div className="w-full  md:w-1/2 p-6 md:p-20">
         <motion.div
-          initial={{ opacity: 0, x: initialX }}
+          initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
           <div className="flex flex-col">
-              <p className="font-boldness-heavy font-heading  text-4xl sm:text-5xl leading-tight">
+              <p className="font-boldness-heavy font-heading  text-4xl sm:text-5xl leading-tight overflow-x-hidden ">
               Infrastructure Leaders Building Communities
             </p>
             <p className="pt-5 text-base font-sans sm:text-lg">

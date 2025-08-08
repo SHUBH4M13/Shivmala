@@ -24,8 +24,8 @@ export default function Footer() {
                 </div>
 
                 {/* Navigation Section */}
-                <div className="w-full md:w-1/3 flex font-heading flex-col sm:flex-row gap-2">
-                    <ul className="font-emphasis-heavy space-y-3 text-center md:text-left">
+                <div className="w-full md:w-1/3 flex font-heading flex-col sm:flex-row gap-6 sm:gap-10">
+                    <ul className="w-full sm:w-1/2 font-emphasis-heavy space-y-3 text-center md:text-left">
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Home</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/aboutus") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">About us</li>
                         <li onClick={() => { window.scrollTo(0, 0); navigate("/services") }} className="text-lg cursor-pointer hover:text-primaryblue duration-200">Services</li>
@@ -43,14 +43,14 @@ export default function Footer() {
                 </div>
 
                 {/* Social and Contact Section */}
-                <div className="w-full md:w-1/3 flex flex-col gap-6 items-center md:items-start">
+                <div className="w-full  pl-4 md:w-1/3 flex flex-col gap-6 items-center md:items-start">
                     <div className="flex flex-col sm:flex-row flex-wrap items-center sm:items-center gap-4 text-sm text-gray-700 font-sans">
                         <p className="hover:text-primaryblue cursor-pointer">+91 8421217140</p>
                         <div className="hidden sm:block w-[1.5px] h-[24px] bg-gray-300" />
                         <p className="hover:text-primaryblue cursor-pointer">Info@shivmalainfra.com</p>
                     </div>
 
-                    <div className="flex flex-col gap-4 items-center md:items-start">
+                    <div className="flex flex-col gap-4 items-center md:items-start  pl-6">
                         <div className="flex gap-4 flex-wrap justify-center md:justify-start">
                             {SocialData.map(({ Icon, link }, idx) => (
                                 <a
@@ -65,15 +65,15 @@ export default function Footer() {
                             ))}
                         </div>
 
-                        <div className="w-fit px-4 py-2 rounded-2xl border-[2px] border-primaryblue cursor-pointer hover:bg-primaryblue hover:text-white transition text-sm font-emphasis">
+                        <div className="w-fit px-4 py-2  rounded-2xl border-[2px] border-primaryblue cursor-pointer hover:bg-primaryblue hover:text-white transition text-sm font-emphasis">
                             <a href="https://wa.me/8421217140">Chat on WhatsApp</a>
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 pt-2 items-center md:items-start w-full">
+                    <div className="flex flex-col pl-6 gap-4 pt-2 items-center md:items-start w-full">
                         <div className="w-full h-[1px] bg-gray-300"></div>
                         <p className="text-sm text-gray-600 font-sans text-center md:text-left">© 2025 Shivmala</p>
-                        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-gray-600 font-sans">
+                        <div className="flex items-center md:items-start gap-3 text-sm text-gray-600 font-sans">
                             <p onClick={() => navigate("/legal/CodeofConduct")} className="hover:text-primaryblue cursor-pointer">Code of Conduct</p>
                             <div className="w-[1.5px] h-[20px] bg-gray-300" />
                             <p onClick={() => navigate("/legal/privacy")} className="hover:text-primaryblue cursor-pointer">Privacy</p>

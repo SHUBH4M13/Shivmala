@@ -18,7 +18,7 @@ import BuildingConstruction from "../assets/BuildingConstruction.jpg"
 
 export default function Services() {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white text-black overflow-x-hidden ">
       <Navbar />
       <ServiceHeroSection />
 

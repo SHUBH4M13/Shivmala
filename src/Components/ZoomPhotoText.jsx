@@ -2,7 +2,7 @@ import React from 'react'
 import CaratText from "./CaratText"
 import CusButton from './CusButton'
 
-export default function ZoomPhotoText({ photo, heading1, heading2, text1, ButtonText, onClick, textalign, h2Size }) {
+export default function ZoomPhotoText({ photo, heading1, heading2, text1, ButtonText, onClick, textalign, h2Size , wid}) {
   return (
     <div className='flex flex-col w-full max-w-[95%] md:max-w-[700px] mx-auto px-4'>
 
@@ -37,6 +37,7 @@ export default function ZoomPhotoText({ photo, heading1, heading2, text1, Button
           <CusButton
             text={ButtonText}
             onClick={onClick}
+            wid={wid}
           />
         </div>
       )}
