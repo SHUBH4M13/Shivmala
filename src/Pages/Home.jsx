@@ -3,6 +3,7 @@ import HeroSection from '../Components/HomeComponents/HeroSection'
 import Footer from "../Components/Footer"
 import Search from "../Components/HomeComponents/SearchBox"
 import Navbar from "../Components/Navbar"
+import { Helmet } from 'react-helmet-async'
 
 import LoadingSpinner from '../Components/LoadingSpinner'
 
